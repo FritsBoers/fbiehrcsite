@@ -1,0 +1,5 @@
+﻿id,name,type,city,country,continent,lat,lng,visitDate,plannedDate,status,isClosed,pins,tshirts,photos,notes,favorite
+amsterdam-nl,Hard Rock Cafe Amsterdam,cafe,Amsterdam,Netherlands,Europe,52.3636,4.8828,2018-06|2023-04,,visited,FALSE,1.jpg|2.jpg,1.jpg,1.jpg|2.jpg,Great location!,FALSE
+london-uk,Hard Rock Cafe London,cafe,London,United Kingdom,Europe,51.5114,-0.1469,2017-03-22,,visited,FALSE,1.jpg,1.jpg,1.jpg,The original!,TRUE
+bali-id,Hard Rock Hotel Bali,hotel,Bali,Indonesia,Asia,-8.7225,115.1689,2022-08-05,,visited,FALSE,1.jpg,,1.jpg,Amazing resort.,TRUE
+tokyo-jp,Hard Rock Cafe Tokyo,cafe,Tokyo,Japan,Asia,35.6595,139.7004,,2026-09-15,planned,FALSE,,,,Looking forward!,FALSE

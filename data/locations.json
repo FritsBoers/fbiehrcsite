@@ -1,0 +1,2907 @@
+[
+    {
+        "id":  "amsterdam-americanhotel-hotel-nl",
+        "name":  "Hard Rock Hotel Amsterdam American",
+        "type":  "hotel",
+        "city":  "Amsterdam",
+        "country":  "Netherlands",
+        "continent":  "Europe",
+        "lat":  52.3731,
+        "lng":  4.8925,
+        "visitDate":  [
+                          "2021-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/amsterdam-americanhotel-hotel-nl/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "amsterdam-cafe-nl",
+        "name":  "Hard Rock Cafe Amsterdam",
+        "type":  "cafe",
+        "city":  "Amsterdam",
+        "country":  "Netherlands",
+        "continent":  "Europe",
+        "lat":  52.3731,
+        "lng":  4.8925,
+        "visitDate":  [
+                          "2024-06",
+                          "2012-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/amsterdam-cafe-nl/pins/1.jpg",
+                     "images/locations/amsterdam-cafe-nl/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/amsterdam-cafe-nl/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "angkor-cafe-kh",
+        "name":  "Hard Rock Cafe Angkor",
+        "type":  "cafe",
+        "city":  "Siem Reap",
+        "country":  "Cambodia",
+        "continent":  "Asia",
+        "lat":  13.3618,
+        "lng":  103.859,
+        "visitDate":  [
+                          "2024-03"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/angkor-cafe-kh/pins/1.jpg",
+                     "images/locations/angkor-cafe-kh/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/angkor-cafe-kh/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "antwerp-cafe-be",
+        "name":  "Hard Rock Cafe Antwerp",
+        "type":  "cafe",
+        "city":  "Antwerp",
+        "country":  "Belgium",
+        "continent":  "Europe",
+        "lat":  51.2211,
+        "lng":  4.3997,
+        "visitDate":  [
+                          "2025-03"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/antwerp-cafe-be/pins/1.jpg",
+                     "images/locations/antwerp-cafe-be/pins/2.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "athens-cafe-gr",
+        "name":  "Hard Rock Cafe Athens",
+        "type":  "cafe",
+        "city":  "Athens",
+        "country":  "Greece",
+        "continent":  "Europe",
+        "lat":  37.9756,
+        "lng":  23.7348,
+        "visitDate":  [
+                          "1995-04"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/athens-cafe-gr/pins/1.jpg",
+                     "images/locations/athens-cafe-gr/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/athens-cafe-gr/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "bali-airport-cafe-id",
+        "name":  "Hard Rock Cafe Bali Airport",
+        "type":  "cafe",
+        "city":  "Bali",
+        "country":  "Indonesia",
+        "continent":  "Asia",
+        "lat":  -8.2271,
+        "lng":  115.1919,
+        "visitDate":  [
+                          "1996-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/bali-airport-cafe-id/pins/1.jpg",
+                     "images/locations/bali-airport-cafe-id/pins/2.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "bali-cafe-id",
+        "name":  "Hard Rock Cafe Bali",
+        "type":  "cafe",
+        "city":  "Bali",
+        "country":  "Indonesia",
+        "continent":  "Asia",
+        "lat":  -8.2271,
+        "lng":  115.1919,
+        "visitDate":  [
+                          "2024-06",
+                          "2012-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/bali-cafe-id/pins/1.jpg",
+                     "images/locations/bali-cafe-id/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/bali-cafe-id/tshirts/1.jpg"
+                    ],
+        "photos":  [
+                       "images/locations/bali-cafe-id/photos/1.jpg",
+                       "images/locations/bali-cafe-id/photos/2.jpg",
+                       "images/locations/bali-cafe-id/photos/3.jpg",
+                       "images/locations/bali-cafe-id/photos/4.jpg"
+                   ],
+        "notes":  "Test text",
+        "favorite":  false
+    },
+    {
+        "id":  "bali-hotel-id",
+        "name":  "Hard Rock Hotel Bali",
+        "type":  "hotel",
+        "city":  "Bali",
+        "country":  "Indonesia",
+        "continent":  "Asia",
+        "lat":  -8.2271,
+        "lng":  115.1919,
+        "visitDate":  [
+                          "2026-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/bali-hotel-id/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+                       "images/locations/bali-hotel-id/photos/1.jpg"
+                   ],
+        "notes":  "Test text",
+        "favorite":  false
+    },
+    {
+        "id":  "bangkok-cafe-th",
+        "name":  "Hard Rock Cafe Bangkok",
+        "type":  "cafe",
+        "city":  "Bangkok",
+        "country":  "Thailand",
+        "continent":  "Asia",
+        "lat":  13.7525,
+        "lng":  100.4935,
+        "visitDate":  [
+                          "1997-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/bangkok-cafe-th/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/bangkok-cafe-th/tshirts/1.jpg",
+                        "images/locations/bangkok-cafe-th/tshirts/2.jpg",
+                        "images/locations/bangkok-cafe-th/tshirts/3.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "barcelona-cafe-es",
+        "name":  "Hard Rock Cafe Barcelona",
+        "type":  "cafe",
+        "city":  "Barcelona",
+        "country":  "Spain",
+        "continent":  "Europe",
+        "lat":  41.3826,
+        "lng":  2.1771,
+        "visitDate":  [
+                          "1998-08"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/barcelona-cafe-es/pins/1.jpg",
+                     "images/locations/barcelona-cafe-es/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/barcelona-cafe-es/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "barcelona-sagradafamilia-rockshop-es",
+        "name":  "Rock Shop Barcelona Sagrada Familia",
+        "type":  "rockshop",
+        "city":  "Barcelona",
+        "country":  "Spain",
+        "continent":  "Europe",
+        "lat":  41.3826,
+        "lng":  2.1771,
+        "visitDate":  [
+                          "2026-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/barcelona-sagradafamilia-rockshop-es/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+                       "images/locations/barcelona-sagradafamilia-rockshop-es/photos/1.jpg"
+                   ],
+        "notes":  "Test text",
+        "favorite":  false
+    },
+    {
+        "id":  "beijing-cafe-cn",
+        "name":  "Hard Rock Cafe Beijing",
+        "type":  "cafe",
+        "city":  "Beijing",
+        "country":  "China",
+        "continent":  "Asia",
+        "lat":  39.9057,
+        "lng":  116.3913,
+        "visitDate":  [
+                          "1999-10"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/beijing-cafe-cn/pins/1.jpg",
+                     "images/locations/beijing-cafe-cn/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/beijing-cafe-cn/tshirts/1.jpg",
+                        "images/locations/beijing-cafe-cn/tshirts/2.jpg",
+                        "images/locations/beijing-cafe-cn/tshirts/3.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "berlin-cafe-de",
+        "name":  "Hard Rock Cafe Berlin",
+        "type":  "cafe",
+        "city":  "Berlin",
+        "country":  "Germany",
+        "continent":  "Europe",
+        "lat":  52.5174,
+        "lng":  13.3951,
+        "visitDate":  [
+                          "2000-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/berlin-cafe-de/pins/1.jpg",
+                     "images/locations/berlin-cafe-de/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/berlin-cafe-de/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "berlin-checkpointcharlie-rockshop-de",
+        "name":  "Rock Shop Berlin Checkpoint Charlie",
+        "type":  "rockshop",
+        "city":  "Berlin",
+        "country":  "Germany",
+        "continent":  "Europe",
+        "lat":  52.5174,
+        "lng":  13.3951,
+        "visitDate":  [
+                          "2001-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/berlin-checkpointcharlie-rockshop-de/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "brussels-cafe-be",
+        "name":  "Hard Rock Cafe Brussels",
+        "type":  "cafe",
+        "city":  "Brussels",
+        "country":  "Belgium",
+        "continent":  "Europe",
+        "lat":  50.8467,
+        "lng":  4.3525,
+        "visitDate":  [
+                          "2002-08"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/brussels-cafe-be/pins/1.jpg",
+                     "images/locations/brussels-cafe-be/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/brussels-cafe-be/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "bucharest-cafe-ro",
+        "name":  "Hard Rock Cafe Bucharest",
+        "type":  "cafe",
+        "city":  "Bucharest",
+        "country":  "Romania",
+        "continent":  "Europe",
+        "lat":  44.4361,
+        "lng":  26.1027,
+        "visitDate":  [
+                          "2003-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/bucharest-cafe-ro/pins/1.jpg",
+                     "images/locations/bucharest-cafe-ro/pins/2.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "budapest-cafe-hu",
+        "name":  "Hard Rock Cafe Budapest",
+        "type":  "cafe",
+        "city":  "Budapest",
+        "country":  "Hungary",
+        "continent":  "Europe",
+        "lat":  47.4814,
+        "lng":  19.1458,
+        "visitDate":  [
+                          "2004-04"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/budapest-cafe-hu/pins/1.jpg",
+                     "images/locations/budapest-cafe-hu/pins/2.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "budapest-hotel-hu",
+        "name":  "Hard Rock Hotel Budapest",
+        "type":  "hotel",
+        "city":  "Budapest",
+        "country":  "Hungary",
+        "continent":  "Europe",
+        "lat":  47.4814,
+        "lng":  19.1458,
+        "visitDate":  [
+                          "2005-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/budapest-hotel-hu/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "buenos-aires-cafe-ar",
+        "name":  "Hard Rock Cafe Buenos Aires",
+        "type":  "cafe",
+        "city":  "Buenos Aires",
+        "country":  "Argentina",
+        "continent":  "South America",
+        "lat":  -34.6096,
+        "lng":  -58.3888,
+        "visitDate":  [
+                          "2005-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/buenos-aires-cafe-ar/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/buenos-aires-cafe-ar/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "cancun-cafe-mx",
+        "name":  "Hard Rock Cafe Cancun",
+        "type":  "cafe",
+        "city":  "Cancun",
+        "country":  "Mexico",
+        "continent":  "North America",
+        "lat":  21.1527,
+        "lng":  -86.8426,
+        "visitDate":  [
+                          "2005-08"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/cancun-cafe-mx/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/cancun-cafe-mx/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "cape-town-cafe-za",
+        "name":  "Hard Rock Cafe Cape Town",
+        "type":  "cafe",
+        "city":  "Cape Town",
+        "country":  "South Africa",
+        "continent":  "Africa",
+        "lat":  -33.9288,
+        "lng":  18.4172,
+        "visitDate":  [
+                          "2006-01"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/cape-town-cafe-za/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/cape-town-cafe-za/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "chicago-cafe-us",
+        "name":  "Hard Rock Cafe Chicago",
+        "type":  "cafe",
+        "city":  "Chicago",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  41.8756,
+        "lng":  -87.6244,
+        "visitDate":  [
+                          "2007-02"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/chicago-cafe-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/chicago-cafe-us/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "chicago-hotel-us",
+        "name":  "Hard Rock Hotel Chicago",
+        "type":  "hotel",
+        "city":  "Chicago",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  41.8756,
+        "lng":  -87.6244,
+        "visitDate":  [
+                          "2008-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+                        "images/locations/chicago-hotel-us/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "cologne-cafe-de",
+        "name":  "Hard Rock Cafe Cologne",
+        "type":  "cafe",
+        "city":  "Cologne",
+        "country":  "Germany",
+        "continent":  "Europe",
+        "lat":  50.9384,
+        "lng":  6.96,
+        "visitDate":  [
+                          "2009-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/cologne-cafe-de/pins/1.jpg",
+                     "images/locations/cologne-cafe-de/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/cologne-cafe-de/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "copenhagen-cafe-dk",
+        "name":  "Hard Rock Cafe Copenhagen",
+        "type":  "cafe",
+        "city":  "Copenhagen",
+        "country":  "Denmark",
+        "continent":  "Europe",
+        "lat":  55.6867,
+        "lng":  12.5701,
+        "visitDate":  [
+                          "2010-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/copenhagen-cafe-dk/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/copenhagen-cafe-dk/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "cozumel-cafe-mx",
+        "name":  "Hard Rock Cafe Cozumel",
+        "type":  "cafe",
+        "city":  "Cozumel",
+        "country":  "Mexico",
+        "continent":  "North America",
+        "lat":  20.4321,
+        "lng":  -86.9207,
+        "visitDate":  [
+                          "2012-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/cozumel-cafe-mx/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/cozumel-cafe-mx/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "dubai-cafe-ae",
+        "name":  "Hard Rock Cafe Dubai",
+        "type":  "cafe",
+        "city":  "Dubai",
+        "country":  "United Arab Emirates",
+        "continent":  "Asia",
+        "lat":  25.0743,
+        "lng":  55.1885,
+        "visitDate":  [
+                          "2026-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/dubai-cafe-ae/pins/1.jpg",
+                     "images/locations/dubai-cafe-ae/pins/2.jpg",
+                     "images/locations/dubai-cafe-ae/pins/3.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/dubai-cafe-ae/tshirts/1.jpg"
+                    ],
+        "photos":  [
+                       "images/locations/dubai-cafe-ae/photos/1.jpg",
+                       "images/locations/dubai-cafe-ae/photos/2.jpg"
+                   ],
+        "notes":  "Test text",
+        "favorite":  false
+    },
+    {
+        "id":  "edinburgh-cafe-gb",
+        "name":  "Hard Rock Cafe Edinburgh",
+        "type":  "cafe",
+        "city":  "Edinburgh",
+        "country":  "United Kingdom",
+        "continent":  "Europe",
+        "lat":  55.9533,
+        "lng":  -3.1884,
+        "visitDate":  [
+                          "2014-08"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/edinburgh-cafe-gb/pins/1.jpg",
+                     "images/locations/edinburgh-cafe-gb/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/edinburgh-cafe-gb/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "gdansk-cafe-pl",
+        "name":  "Hard Rock Cafe Gdansk",
+        "type":  "cafe",
+        "city":  "Gdansk",
+        "country":  "Poland",
+        "continent":  "Europe",
+        "lat":  54.4288,
+        "lng":  18.7983,
+        "visitDate":  [
+                          "2018-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/gdansk-cafe-pl/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "glasgow-cafe-gb",
+        "name":  "Hard Rock Cafe Glasgow",
+        "type":  "cafe",
+        "city":  "Glasgow",
+        "country":  "United Kingdom",
+        "continent":  "Europe",
+        "lat":  55.8612,
+        "lng":  -4.2502,
+        "visitDate":  [
+                          "2020-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/glasgow-cafe-gb/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/glasgow-cafe-gb/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "gran-canaria-cafe-es",
+        "name":  "Hard Rock Cafe Gran Canaria",
+        "type":  "cafe",
+        "city":  "Gran Canaria",
+        "country":  "Spain",
+        "continent":  "Europe",
+        "lat":  27.958,
+        "lng":  -15.6062,
+        "visitDate":  [
+                          "2021-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/gran-canaria-cafe-es/pins/1.jpg",
+                     "images/locations/gran-canaria-cafe-es/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/gran-canaria-cafe-es/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "hamburg-cafe-de",
+        "name":  "Hard Rock Cafe Hamburg",
+        "type":  "cafe",
+        "city":  "Hamburg",
+        "country":  "Germany",
+        "continent":  "Europe",
+        "lat":  53.5502,
+        "lng":  10.0013,
+        "visitDate":  [
+                          "2022-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/hamburg-cafe-de/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "ho-chi-minh-city-cafe-vn",
+        "name":  "Hard Rock Cafe Ho Chi Minh City",
+        "type":  "cafe",
+        "city":  "Ho Chi Minh City",
+        "country":  "Vietnam",
+        "continent":  "Asia",
+        "lat":  10.7755,
+        "lng":  106.7021,
+        "visitDate":  [
+                          "2026-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/ho-chi-minh-city-cafe-vn/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+                       "images/locations/ho-chi-minh-city-cafe-vn/photos/1.jpg"
+                   ],
+        "notes":  "Test text",
+        "favorite":  false
+    },
+    {
+        "id":  "hollywood-cafe-us",
+        "name":  "Hard Rock Cafe Hollywood FL",
+        "type":  "cafe",
+        "city":  "Hollywood",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  34.098,
+        "lng":  -118.3295,
+        "visitDate":  [
+                          "2023-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "hollywood-hotel-us",
+        "name":  "Hard Rock Hotel \u0026 Casino Hollywood",
+        "type":  "hotel",
+        "city":  "Hollywood",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  34.098,
+        "lng":  -118.3295,
+        "visitDate":  [
+                          "2024-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/hollywood-hotel-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "hong-kong-cafe-hk",
+        "name":  "Hard Rock Cafe Hong Kong",
+        "type":  "cafe",
+        "city":  "Hong Kong",
+        "country":  "China",
+        "continent":  "Asia",
+        "lat":  22.3492,
+        "lng":  114.1858,
+        "visitDate":  [
+                          "2026-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/hong-kong-cafe-hk/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/hong-kong-cafe-hk/tshirts/1.jpg"
+                    ],
+        "photos":  [
+                       "images/locations/hong-kong-cafe-hk/photos/1.jpg"
+                   ],
+        "notes":  "Test text",
+        "favorite":  false
+    },
+    {
+        "id":  "hong-kong-thepeak-cafe-hk",
+        "name":  "Hard Rock Cafe Hong Kong The Peak",
+        "type":  "cafe",
+        "city":  "Hong Kong",
+        "country":  "China",
+        "continent":  "Asia",
+        "lat":  22.3492,
+        "lng":  114.1858,
+        "visitDate":  [
+                          "2025-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+                        "images/locations/hong-kong-thepeak-cafe-hk/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "ibiza-cafe-es",
+        "name":  "Hard Rock Cafe Ibiza",
+        "type":  "cafe",
+        "city":  "Ibiza",
+        "country":  "Spain",
+        "continent":  "Europe",
+        "lat":  38.9744,
+        "lng":  1.4197,
+        "visitDate":  [
+                          "2025-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/ibiza-cafe-es/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/ibiza-cafe-es/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "ibiza-hotel-es",
+        "name":  "Hard Rock Hotel Ibiza",
+        "type":  "hotel",
+        "city":  "Ibiza",
+        "country":  "Spain",
+        "continent":  "Europe",
+        "lat":  38.9744,
+        "lng":  1.4197,
+        "visitDate":  [
+                          "2003-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/ibiza-hotel-es/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/ibiza-hotel-es/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "innsbruck-cafe-at",
+        "name":  "Hard Rock Cafe Innsbruck",
+        "type":  "cafe",
+        "city":  "Innsbruck",
+        "country":  "Austria",
+        "continent":  "Europe",
+        "lat":  47.2654,
+        "lng":  11.3928,
+        "visitDate":  [
+                          "2004-04"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/innsbruck-cafe-at/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "jakarta-cafe-id",
+        "name":  "Hard Rock Cafe Jakarta",
+        "type":  "cafe",
+        "city":  "Jakarta",
+        "country":  "Indonesia",
+        "continent":  "Asia",
+        "lat":  -6.1754,
+        "lng":  106.8272,
+        "visitDate":  [
+                          "2005-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/jakarta-cafe-id/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/jakarta-cafe-id/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "key-west-cafe-us",
+        "name":  "Hard Rock Cafe Key West",
+        "type":  "cafe",
+        "city":  "Key West",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  24.5548,
+        "lng":  -81.8021,
+        "visitDate":  [
+                          "2005-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/key-west-cafe-us/pins/1.jpg",
+                     "images/locations/key-west-cafe-us/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/key-west-cafe-us/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "koh-samui-cafe-th",
+        "name":  "Hard Rock Cafe Koh Samui",
+        "type":  "cafe",
+        "city":  "Koh Samui",
+        "country":  "Thailand",
+        "continent":  "Asia",
+        "lat":  9.5014,
+        "lng":  99.9956,
+        "visitDate":  [
+                          "2005-08"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/koh-samui-cafe-th/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/koh-samui-cafe-th/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "krakow-cafe-pl",
+        "name":  "Hard Rock Cafe Krakow",
+        "type":  "cafe",
+        "city":  "Krakow",
+        "country":  "Poland",
+        "continent":  "Europe",
+        "lat":  50.0619,
+        "lng":  19.9369,
+        "visitDate":  [
+                          "2006-01"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/krakow-cafe-pl/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "kuala-lumpur-cafe-my",
+        "name":  "Hard Rock Cafe Kuala Lumpur",
+        "type":  "cafe",
+        "city":  "Kuala Lumpur",
+        "country":  "Malaysia",
+        "continent":  "Asia",
+        "lat":  3.1517,
+        "lng":  101.6942,
+        "visitDate":  [
+                          "2007-02"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/kuala-lumpur-cafe-my/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/kuala-lumpur-cafe-my/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "kyoto-cafe-jp",
+        "name":  "Hard Rock Cafe Kyoto",
+        "type":  "cafe",
+        "city":  "Kyoto",
+        "country":  "Japan",
+        "continent":  "Asia",
+        "lat":  35.0116,
+        "lng":  135.7681,
+        "visitDate":  [
+                          "2008-06"
+                      ],
+        "plannedDate":  "2026-07",
+        "status":  "planned",
+        "isClosed":  false,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "las-vegas-cafe-us",
+        "name":  "Hard Rock Cafe Las Vegas",
+        "type":  "cafe",
+        "city":  "Las Vegas",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  36.1674,
+        "lng":  -115.1484,
+        "visitDate":  [
+                          "2009-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/las-vegas-cafe-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/las-vegas-cafe-us/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "lima-cafe-pe",
+        "name":  "Hard Rock Cafe Lima",
+        "type":  "cafe",
+        "city":  "Lima",
+        "country":  "Peru",
+        "continent":  "South America",
+        "lat":  -12.046,
+        "lng":  -77.0306,
+        "visitDate":  [
+                          "2010-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/lima-cafe-pe/pins/1.jpg",
+                     "images/locations/lima-cafe-pe/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/lima-cafe-pe/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "lisbon-cafe-pt",
+        "name":  "Hard Rock Cafe Lisbon",
+        "type":  "cafe",
+        "city":  "Lisbon",
+        "country":  "Portugal",
+        "continent":  "Europe",
+        "lat":  38.7078,
+        "lng":  -9.1366,
+        "visitDate":  [
+                          "2012-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/lisbon-cafe-pt/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+                       "images/locations/lisbon-cafe-pt/photos/1.jpg"
+                   ],
+        "notes":  "Test text",
+        "favorite":  false
+    },
+    {
+        "id":  "london-cafe-gb",
+        "name":  "Hard Rock Cafe London",
+        "type":  "cafe",
+        "city":  "London",
+        "country":  "United Kingdom",
+        "continent":  "Europe",
+        "lat":  51.5074,
+        "lng":  -0.1278,
+        "visitDate":  [
+                          "2014-08"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/london-cafe-gb/pins/1.jpg",
+                     "images/locations/london-cafe-gb/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/london-cafe-gb/tshirts/1.jpg",
+                        "images/locations/london-cafe-gb/tshirts/2.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "london-hotel-gb",
+        "name":  "Hard Rock Hotel London",
+        "type":  "hotel",
+        "city":  "London",
+        "country":  "United Kingdom",
+        "continent":  "Europe",
+        "lat":  51.5074,
+        "lng":  -0.1278,
+        "visitDate":  [
+                          "2018-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/london-hotel-gb/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "london-oxfordstreet-cafe-gb",
+        "name":  "Hard Rock Cafe London Oxford Street",
+        "type":  "cafe",
+        "city":  "London",
+        "country":  "United Kingdom",
+        "continent":  "Europe",
+        "lat":  51.5074,
+        "lng":  -0.1278,
+        "visitDate":  [
+                          "2020-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "london-piccadillycircus-cafe-gb",
+        "name":  "Hard Rock Cafe London Piccadilly Circus",
+        "type":  "cafe",
+        "city":  "London",
+        "country":  "United Kingdom",
+        "continent":  "Europe",
+        "lat":  51.5074,
+        "lng":  -0.1278,
+        "visitDate":  [
+                          "2021-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/london-piccadillycircus-cafe-gb/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "los-angeles-cafe-us",
+        "name":  "Hard Rock Cafe Los Angeles",
+        "type":  "cafe",
+        "city":  "Los Angeles",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  34.0537,
+        "lng":  -118.2428,
+        "visitDate":  [
+                          "2022-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/los-angeles-cafe-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/los-angeles-cafe-us/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "lyon-cafe-fr",
+        "name":  "Hard Rock Cafe Lyon",
+        "type":  "cafe",
+        "city":  "Lyon",
+        "country":  "France",
+        "continent":  "Europe",
+        "lat":  45.7578,
+        "lng":  4.832,
+        "visitDate":  [
+                          "2023-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/lyon-cafe-fr/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "madrid-cafe-es",
+        "name":  "Hard Rock Cafe Madrid",
+        "type":  "cafe",
+        "city":  "Madrid",
+        "country":  "Spain",
+        "continent":  "Europe",
+        "lat":  40.4168,
+        "lng":  -3.7035,
+        "visitDate":  [
+                          "2024-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/madrid-cafe-es/pins/1.jpg",
+                     "images/locations/madrid-cafe-es/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/madrid-cafe-es/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "malaga-cafe-es",
+        "name":  "Hard Rock Cafe Malaga",
+        "type":  "cafe",
+        "city":  "Malaga",
+        "country":  "Spain",
+        "continent":  "Europe",
+        "lat":  36.7213,
+        "lng":  -4.4216,
+        "visitDate":  [
+                          "2025-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/malaga-cafe-es/pins/1.jpg",
+                     "images/locations/malaga-cafe-es/pins/2.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "mallorca-cafe-es",
+        "name":  "Hard Rock Cafe Mallorca",
+        "type":  "cafe",
+        "city":  "Mallorca",
+        "country":  "Spain",
+        "continent":  "Europe",
+        "lat":  39.6134,
+        "lng":  2.8829,
+        "visitDate":  [
+                          "2025-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+                        "images/locations/mallorca-cafe-es/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "malta-airport-cafe-mt",
+        "name":  "Hard Rock Cafe Malta Airport",
+        "type":  "cafe",
+        "city":  "Luqa",
+        "country":  "Malta",
+        "continent":  "Europe",
+        "lat":  35.8597,
+        "lng":  14.4893,
+        "visitDate":  [
+                          "1997-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "malta-cafe-mt",
+        "name":  "Hard Rock Cafe Malta",
+        "type":  "cafe",
+        "city":  "St. Julian\u0027s",
+        "country":  "Malta",
+        "continent":  "Europe",
+        "lat":  35.9199,
+        "lng":  14.4877,
+        "visitDate":  [
+                          "1998-08"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/malta-cafe-mt/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "manchester-cafe-gb",
+        "name":  "Hard Rock Cafe Manchester",
+        "type":  "cafe",
+        "city":  "Manchester",
+        "country":  "United Kingdom",
+        "continent":  "Europe",
+        "lat":  53.4795,
+        "lng":  -2.2451,
+        "visitDate":  [
+                          "1999-10"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/manchester-cafe-gb/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/manchester-cafe-gb/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "marbella-hotel-es",
+        "name":  "Hard Rock Hotel Marbella",
+        "type":  "hotel",
+        "city":  "Marbella",
+        "country":  "Spain",
+        "continent":  "Europe",
+        "lat":  36.509,
+        "lng":  -4.8856,
+        "visitDate":  [
+                          "2000-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/marbella-hotel-es/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "melaka-cafe-my",
+        "name":  "Hard Rock Cafe Melaka",
+        "type":  "cafe",
+        "city":  "Melaka",
+        "country":  "Malaysia",
+        "continent":  "Asia",
+        "lat":  2.3294,
+        "lng":  102.2881,
+        "visitDate":  [
+                          "2001-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/melaka-cafe-my/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/melaka-cafe-my/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "melbourne-cafe-au",
+        "name":  "Hard Rock Cafe Melbourne",
+        "type":  "cafe",
+        "city":  "Melbourne",
+        "country":  "Australia",
+        "continent":  "Oceania",
+        "lat":  -37.8142,
+        "lng":  144.9632,
+        "visitDate":  [
+                          "2002-08"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/melbourne-cafe-au/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/melbourne-cafe-au/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "Test text",
+        "favorite":  false
+    },
+    {
+        "id":  "miami-cafe-us",
+        "name":  "Hard Rock Cafe Miami",
+        "type":  "cafe",
+        "city":  "Miami",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  25.7742,
+        "lng":  -80.1936,
+        "visitDate":  [
+                          "2003-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/miami-cafe-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/miami-cafe-us/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "milan-cafe-it",
+        "name":  "Hard Rock Cafe Milan",
+        "type":  "cafe",
+        "city":  "Milan",
+        "country":  "Italy",
+        "continent":  "Europe",
+        "lat":  45.4642,
+        "lng":  9.1896,
+        "visitDate":  [
+                          "2004-04"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/milan-cafe-it/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "munich-cafe-de",
+        "name":  "Hard Rock Cafe Munich",
+        "type":  "cafe",
+        "city":  "Munich",
+        "country":  "Germany",
+        "continent":  "Europe",
+        "lat":  48.1371,
+        "lng":  11.5754,
+        "visitDate":  [
+                          "2005-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/munich-cafe-de/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "new-york-cafe-us",
+        "name":  "Hard Rock Cafe New York",
+        "type":  "cafe",
+        "city":  "New York",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  40.7127,
+        "lng":  -74.006,
+        "visitDate":  [
+                          "2005-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/new-york-cafe-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/new-york-cafe-us/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "new-york-hotel-us",
+        "name":  "Hard Rock Hotel New York",
+        "type":  "hotel",
+        "city":  "New York",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  40.7127,
+        "lng":  -74.006,
+        "visitDate":  [
+                          "2022-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/new-york-hotel-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "niagara-falls-cafe-ca",
+        "name":  "Hard Rock Cafe Niagara Falls",
+        "type":  "cafe",
+        "city":  "Niagara Falls",
+        "country":  "Canada",
+        "continent":  "North America",
+        "lat":  43.1066,
+        "lng":  -79.0639,
+        "visitDate":  [
+                          "2023-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/niagara-falls-cafe-ca/pins/1.jpg",
+                     "images/locations/niagara-falls-cafe-ca/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/niagara-falls-cafe-ca/tshirts/1.jpg",
+                        "images/locations/niagara-falls-cafe-ca/tshirts/2.jpg"
+                    ],
+        "photos":  [
+                       "images/locations/niagara-falls-cafe-ca/photos/1.jpg"
+                   ],
+        "notes":  "Test text",
+        "favorite":  false
+    },
+    {
+        "id":  "niagara-falls-us-cafe-us",
+        "name":  "Hard Rock Cafe Niagara Falls USA",
+        "type":  "cafe",
+        "city":  "Niagara Falls",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  43.0848,
+        "lng":  -79.0702,
+        "visitDate":  [
+                          "2024-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/niagara-falls-us-cafe-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/niagara-falls-us-cafe-us/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "nice-cafe-fr",
+        "name":  "Hard Rock Cafe Nice",
+        "type":  "cafe",
+        "city":  "Nice",
+        "country":  "France",
+        "continent":  "Europe",
+        "lat":  43.7009,
+        "lng":  7.2684,
+        "visitDate":  [
+                          "2025-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/nice-cafe-fr/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "orlando-cafe-us",
+        "name":  "Hard Rock Cafe Orlando",
+        "type":  "cafe",
+        "city":  "Orlando",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  28.5421,
+        "lng":  -81.379,
+        "visitDate":  [
+                          "2025-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/orlando-cafe-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/orlando-cafe-us/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "orlando-universal-hotel-us",
+        "name":  "Hard Rock Hotel Orlando Universal",
+        "type":  "hotel",
+        "city":  "Orlando",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  28.5421,
+        "lng":  -81.379,
+        "visitDate":  [
+                          "2003-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/orlando-universal-hotel-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "osaka-namba-rockshop-jp",
+        "name":  "Rock Shop Osaka Namba",
+        "type":  "rockshop",
+        "city":  "Osaka",
+        "country":  "Japan",
+        "continent":  "Asia",
+        "lat":  34.6938,
+        "lng":  135.5015,
+        "visitDate":  [
+
+                      ],
+        "plannedDate":  "2027-07",
+        "status":  "planned",
+        "isClosed":  false,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "oslo-cafe-no",
+        "name":  "Hard Rock Cafe Oslo",
+        "type":  "cafe",
+        "city":  "Oslo",
+        "country":  "Norway",
+        "continent":  "Europe",
+        "lat":  59.9133,
+        "lng":  10.739,
+        "visitDate":  [
+                          "2004-04"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/oslo-cafe-no/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/oslo-cafe-no/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "paris-cafe-fr",
+        "name":  "Hard Rock Cafe Paris",
+        "type":  "cafe",
+        "city":  "Paris",
+        "country":  "France",
+        "continent":  "Europe",
+        "lat":  48.8535,
+        "lng":  2.3484,
+        "visitDate":  [
+                          "2005-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/paris-cafe-fr/pins/1.jpg",
+                     "images/locations/paris-cafe-fr/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/paris-cafe-fr/tshirts/1.jpg",
+                        "images/locations/paris-cafe-fr/tshirts/2.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "penang-cafe-my",
+        "name":  "Hard Rock Cafe Penang",
+        "type":  "cafe",
+        "city":  "Penang",
+        "country":  "Malaysia",
+        "continent":  "Asia",
+        "lat":  5.4065,
+        "lng":  100.2559,
+        "visitDate":  [
+                          "2005-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+                        "images/locations/penang-cafe-my/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "penang-hotel-my",
+        "name":  "Hard Rock Hotel Penang",
+        "type":  "hotel",
+        "city":  "Penang",
+        "country":  "Malaysia",
+        "continent":  "Asia",
+        "lat":  5.4065,
+        "lng":  100.2559,
+        "visitDate":  [
+                          "2005-08"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "porto-cafe-pt",
+        "name":  "Hard Rock Cafe Porto",
+        "type":  "cafe",
+        "city":  "Porto",
+        "country":  "Portugal",
+        "continent":  "Europe",
+        "lat":  41.1502,
+        "lng":  -8.6103,
+        "visitDate":  [
+                          "2006-01"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/porto-cafe-pt/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/porto-cafe-pt/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "prague-cafe-cz",
+        "name":  "Hard Rock Cafe Prague",
+        "type":  "cafe",
+        "city":  "Prague",
+        "country":  "Czech Republic",
+        "continent":  "Europe",
+        "lat":  50.0875,
+        "lng":  14.4213,
+        "visitDate":  [
+                          "2007-02"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/prague-cafe-cz/pins/1.jpg",
+                     "images/locations/prague-cafe-cz/pins/2.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/prague-cafe-cz/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "reykjavik-cafe-is",
+        "name":  "Hard Rock Cafe Reykjavik",
+        "type":  "cafe",
+        "city":  "Reykjavik",
+        "country":  "Iceland",
+        "continent":  "Europe",
+        "lat":  64.146,
+        "lng":  -21.9422,
+        "visitDate":  [
+                          "2022-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/reykjavik-cafe-is/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/reykjavik-cafe-is/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "rome-cafe-it",
+        "name":  "Hard Rock Cafe Rome",
+        "type":  "cafe",
+        "city":  "Rome",
+        "country":  "Italy",
+        "continent":  "Europe",
+        "lat":  41.8933,
+        "lng":  12.4829,
+        "visitDate":  [
+                          "2023-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/rome-cafe-it/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/rome-cafe-it/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "salt-lake-city-cafe-us",
+        "name":  "Hard Rock Cafe Salt Lake City",
+        "type":  "cafe",
+        "city":  "Salt Lake City",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  40.7596,
+        "lng":  -111.8868,
+        "visitDate":  [
+                          "2024-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/salt-lake-city-cafe-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/salt-lake-city-cafe-us/tshirts/1.jpg",
+                        "images/locations/salt-lake-city-cafe-us/tshirts/2.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "san-francisco-cafe-us",
+        "name":  "Hard Rock Cafe San Francisco",
+        "type":  "cafe",
+        "city":  "San Francisco",
+        "country":  "United States of America",
+        "continent":  "North America",
+        "lat":  37.7879,
+        "lng":  -122.4075,
+        "visitDate":  [
+                          "2025-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/san-francisco-cafe-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/san-francisco-cafe-us/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "Test text",
+        "favorite":  false
+    },
+    {
+        "id":  "san-jose-cafe-cr",
+        "name":  "Hard Rock Cafe San Jose",
+        "type":  "cafe",
+        "city":  "San Jose",
+        "country":  "Costa Rica",
+        "continent":  "North America",
+        "lat":  9.9328,
+        "lng":  -84.0796,
+        "visitDate":  [
+                          "2025-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/san-jose-cafe-cr/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/san-jose-cafe-cr/tshirts/1.jpg"
+                    ],
+        "photos":  [
+                       "images/locations/san-jose-cafe-cr/photos/1.jpg"
+                   ],
+        "notes":  "Test text",
+        "favorite":  false
+    },
+    {
+        "id":  "san-juan-cafe-pr",
+        "name":  "Hard Rock Cafe San Juan",
+        "type":  "cafe",
+        "city":  "San Juan",
+        "country":  "Puerto Rico",
+        "continent":  "North America",
+        "lat":  18.4653,
+        "lng":  -66.1167,
+        "visitDate":  [
+                          "1997-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/san-juan-cafe-pr/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/san-juan-cafe-pr/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "Test text",
+        "favorite":  false
+    },
+    {
+        "id":  "seattle-cafe-us",
+        "name":  "Hard Rock Cafe Seattle",
+        "type":  "cafe",
+        "city":  "Seattle",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  47.6038,
+        "lng":  -122.3301,
+        "visitDate":  [
+                          "1998-08"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/seattle-cafe-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/seattle-cafe-us/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "shenzhen-cafe-cn",
+        "name":  "Hard Rock Cafe Shenzhen",
+        "type":  "cafe",
+        "city":  "Shenzhen",
+        "country":  "China",
+        "continent":  "Asia",
+        "lat":  22.5446,
+        "lng":  114.0545,
+        "visitDate":  [
+                          "1999-10"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/shenzhen-cafe-cn/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "shenzhen-hotel-cn",
+        "name":  "Hard Rock Hotel Shenzhen",
+        "type":  "hotel",
+        "city":  "Shenzhen",
+        "country":  "China",
+        "continent":  "Asia",
+        "lat":  22.5446,
+        "lng":  114.0545,
+        "visitDate":  [
+                          "2000-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/shenzhen-hotel-cn/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "singapore-cafe-sg",
+        "name":  "Hard Rock Cafe Singapore",
+        "type":  "cafe",
+        "city":  "Singapore",
+        "country":  "Singapore",
+        "continent":  "Asia",
+        "lat":  1.3571,
+        "lng":  103.8195,
+        "visitDate":  [
+                          "2001-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/singapore-cafe-sg/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "singapore-hotel-sg",
+        "name":  "Hard Rock Hotel Singapore",
+        "type":  "hotel",
+        "city":  "Singapore",
+        "country":  "Singapore",
+        "continent":  "Asia",
+        "lat":  1.3571,
+        "lng":  103.8195,
+        "visitDate":  [
+                          "2003-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/singapore-hotel-sg/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "st-thomas-cafe-vi",
+        "name":  "Hard Rock Cafe St. Thomas",
+        "type":  "cafe",
+        "city":  "St. Thomas",
+        "country":  "US Virgin Islands",
+        "continent":  "North America",
+        "lat":  18.3429,
+        "lng":  -64.9189,
+        "visitDate":  [
+                          "2004-04"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/st-thomas-cafe-vi/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/st-thomas-cafe-vi/tshirts/1.jpg",
+                        "images/locations/st-thomas-cafe-vi/tshirts/2.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "sydney-cafe-au",
+        "name":  "Hard Rock Cafe Sydney",
+        "type":  "cafe",
+        "city":  "Sydney",
+        "country":  "Australia",
+        "continent":  "Oceania",
+        "lat":  -33.8698,
+        "lng":  151.2083,
+        "visitDate":  [
+                          "2005-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/sydney-cafe-au/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/sydney-cafe-au/tshirts/1.jpg",
+                        "images/locations/sydney-cafe-au/tshirts/2.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "tampa-cafe-us",
+        "name":  "Hard Rock Cafe Tampa",
+        "type":  "cafe",
+        "city":  "Tampa",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  27.945,
+        "lng":  -82.4583,
+        "visitDate":  [
+                          "2005-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/tampa-cafe-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "tampa-hotel-us",
+        "name":  "Hard Rock Hotel \u0026 Casino Tampa",
+        "type":  "hotel",
+        "city":  "Tampa",
+        "country":  "United States",
+        "continent":  "North America",
+        "lat":  27.945,
+        "lng":  -82.4583,
+        "visitDate":  [
+                          "2022-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/tampa-hotel-us/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "tijuana-cafe-mx",
+        "name":  "Hard Rock Cafe Tijuana",
+        "type":  "cafe",
+        "city":  "Tijuana",
+        "country":  "Mexico",
+        "continent":  "North America",
+        "lat":  32.5317,
+        "lng":  -117.0195,
+        "visitDate":  [
+                          "2024-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/tijuana-cafe-mx/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/tijuana-cafe-mx/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "tokyo-roppongi-cafe-jp",
+        "name":  "Hard Rock Cafe Tokyo Roppongi",
+        "type":  "cafe",
+        "city":  "Tokyo",
+        "country":  "Japan",
+        "continent":  "Asia",
+        "lat":  35.6769,
+        "lng":  139.7639,
+        "visitDate":  [
+
+                      ],
+        "plannedDate":  "2026-07",
+        "status":  "planned",
+        "isClosed":  false,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+                        "images/locations/tokyo-roppongi-cafe-jp/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "tokyo-uyeno-eki-cafe-jp",
+        "name":  "Hard Rock Cafe Tokyo Uyeno Eki",
+        "type":  "cafe",
+        "city":  "Tokyo",
+        "country":  "Japan",
+        "continent":  "Asia",
+        "lat":  35.6769,
+        "lng":  139.7639,
+        "visitDate":  [
+
+                      ],
+        "plannedDate":  "2026-07",
+        "status":  "planned",
+        "isClosed":  false,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "toronto-cafe-ca",
+        "name":  "Hard Rock Cafe Toronto",
+        "type":  "cafe",
+        "city":  "Toronto",
+        "country":  "Canada",
+        "continent":  "North America",
+        "lat":  43.6535,
+        "lng":  -79.3839,
+        "visitDate":  [
+                          "2025-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+                        "images/locations/toronto-cafe-ca/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "toronto-skydome-cafe-ca",
+        "name":  "Hard Rock Cafe Toronto Skydome",
+        "type":  "cafe",
+        "city":  "Toronto",
+        "country":  "Canada",
+        "continent":  "North America",
+        "lat":  43.6535,
+        "lng":  -79.3839,
+        "visitDate":  [
+                          "2003-06"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/toronto-skydome-cafe-ca/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/toronto-skydome-cafe-ca/tshirts/1.jpg"
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "tromso-cafe-no",
+        "name":  "Hard Rock Cafe Tromso",
+        "type":  "cafe",
+        "city":  "Tromso",
+        "country":  "Norway",
+        "continent":  "Europe",
+        "lat":  69.6516,
+        "lng":  18.9559,
+        "visitDate":  [
+                          "2004-04"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "vienna-cafe-at",
+        "name":  "Hard Rock Cafe Vienna",
+        "type":  "cafe",
+        "city":  "Vienna",
+        "country":  "Austria",
+        "continent":  "Europe",
+        "lat":  48.2084,
+        "lng":  16.3725,
+        "visitDate":  [
+                          "2005-05"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  true,
+        "pins":  [
+                     "images/locations/vienna-cafe-at/pins/1.jpg",
+                     "images/locations/vienna-cafe-at/pins/2.jpg",
+                     "images/locations/vienna-cafe-at/pins/3.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "warsaw-cafe-pl",
+        "name":  "Hard Rock Cafe Warsaw",
+        "type":  "cafe",
+        "city":  "Warsaw",
+        "country":  "Poland",
+        "continent":  "Europe",
+        "lat":  52.2334,
+        "lng":  21.0711,
+        "visitDate":  [
+                          "2005-07"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/warsaw-cafe-pl/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "wroclaw-cafe-pl",
+        "name":  "Hard Rock Cafe Wroclaw",
+        "type":  "cafe",
+        "city":  "Wroclaw",
+        "country":  "Poland",
+        "continent":  "Europe",
+        "lat":  51.1263,
+        "lng":  16.9782,
+        "visitDate":  [
+                          "2005-08"
+                      ],
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/wroclaw-cafe-pl/pins/1.jpg"
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "yokohama-cafe-jp",
+        "name":  "Hard Rock Cafe Yokohama",
+        "type":  "cafe",
+        "city":  "Yokohama",
+        "country":  "Japan",
+        "continent":  "Asia",
+        "lat":  35.4503,
+        "lng":  139.6344,
+        "visitDate":  [
+
+                      ],
+        "plannedDate":  "2026-07",
+        "status":  "planned",
+        "isClosed":  false,
+        "pins":  [
+
+                 ],
+        "tshirts":  [
+
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    }
+]

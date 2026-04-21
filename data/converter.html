@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSV to JSON Converter — HRC Collection</title>
+  <style>
+    body { font-family: sans-serif; background: #1a1a1a; color: #fff; padding: 30px; max-width: 900px; margin: 0 auto; }
+    h1 { color: #d4a843; }
+    h2 { color: #c8102e; margin-top: 30px; }
+    textarea { width: 100%; height: 200px; background: #2d2d2d; color: #fff; border: 1px solid #555; padding: 12px; font-family: monospace; font-size: 13px; border-radius: 6px; }
+    button { background: #c8102e; color: #fff; border: none; padding: 12px 28px; font-size: 1rem; cursor: pointer; border-radius: 6px; margin: 10px 5px 0 0; }
+    button:hover { background: #a00d24; }
+    button.secondary { background: #d4a843; color: #000; }
+    button.secondary:hover { background: #b08a2e; }
+    pre { background: #2d2d2d; padding: 15px; border-radius: 6px; overflow-x: auto; font-size: 12px; max-height: 400px; border: 1px solid #555; }
+    .msg { padding: 10px 15px; border-radius: 6px; margin: 10px 0; }
+    .msg.ok { background: #1a3a2a; border: 1px solid #2d8a4e; color: #7fff7f; }
+    .msg.err { background: #3a1a1a; border: 1px solid #c8102e; color: #ff9999; }
+    .tip { background: #2d2d2d; border-left: 4px solid #d4a843; padding: 15px; border-radius: 0 6px 6px 0; margin: 20px 0; font-size: 0.9rem; color: #b0b0b0; }
+    .tip strong { color: #d4a843; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.8rem; margin-top: 10px; }
+    th { background: #2d2d2d; color: #d4a843; padding: 8px; text-align: left; border: 1px solid #555; }
+    td { padding: 6px 8px; border: 1px solid #3a3a3a; color: #b0b0b0; vertical-align: top; }
+    td code { color: #e8c76a; }
+  </style>
+</head>
+<body>
+
+<h1>🎸 HRC Collection — Location Data Converter</h1>
+<p style="color:#b0b0b0;">Fill in your locations in Excel using the template CSV, then paste the CSV content below to convert it to <code>locations.json</code>.</p>
+
+<div class="tip">
+  <strong>How to use:</strong><br>
+  1. Open <code>data/locations-template.csv</code> in Excel<br>
+  2. Add all your locations (one per row)<br>
+  3. Save as CSV (File → Save As → CSV UTF-8)<br>
+  4. Open the CSV in Notepad, select all, copy<br>
+  5. Paste into the box below and click Convert
+</div>
+
+<h2>Column Reference</h2>
+<table>
+  <tr><th>Column</th><th>Values / Format</th><th>Example</th></tr>
+  <tr><td><code>id</code></td><td>Unique slug — lowercase, hyphens</td><td><code>amsterdam-nl</code></td></tr>
+  <tr><td><code>name</code></td><td>Full location name</td><td><code>Hard Rock Cafe Amsterdam</code></td></tr>
+  <tr><td><code>type</code></td><td><code>cafe</code> / <code>hotel</code> / <code>rockshop</code></td><td><code>cafe</code></td></tr>
+  <tr><td><code>city</code></td><td>City name</td><td><code>Amsterdam</code></td></tr>
+  <tr><td><code>country</code></td><td>Country name</td><td><code>Netherlands</code></td></tr>
+  <tr><td><code>continent</code></td><td>Europe / Asia / North America / South America / Africa / Oceania</td><td><code>Europe</code></td></tr>
+  <tr><td><code>lat</code></td><td>Latitude (decimal)</td><td><code>52.3636</code></td></tr>
+  <tr><td><code>lng</code></td><td>Longitude (decimal)</td><td><code>4.8828</code></td></tr>
+  <tr><td><code>visitDate</code></td><td>YYYY-MM or YYYY-MM-DD. Use <code>|</code> for multiple visits (e.g. <code>2018-06|2023-04</code>). Leave empty if planned</td><td><code>2018-06|2023-04</code></td></tr>
+  <tr><td><code>plannedDate</code></td><td>YYYY-MM-DD or YYYY-MM. Leave empty if visited</td><td><code>2026-09</code></td></tr>
+  <tr><td><code>status</code></td><td><code>visited</code> / <code>planned</code></td><td><code>visited</code></td></tr>
+  <tr><td><code>isClosed</code></td><td><code>TRUE</code> or <code>FALSE</code></td><td><code>FALSE</code></td></tr>
+  <tr><td><code>pins</code></td><td>Pin filenames, separated by <code>|</code>. Auto-expands to <code>images/locations/{id}/pins/{filename}</code></td><td><code>1.jpg|2.jpg</code></td></tr>
+  <tr><td><code>tshirts</code></td><td>T-shirt filenames, separated by <code>|</code>. Auto-expands to <code>images/locations/{id}/tshirts/{filename}</code></td><td><code>1.jpg</code></td></tr>
+  <tr><td><code>photos</code></td><td>Location photo filenames, separated by <code>|</code>. Auto-expands to <code>images/locations/{id}/photos/{filename}</code></td><td><code>1.jpg|2.jpg|3.jpg</code></td></tr>
+  <tr><td><code>thumbnail</code></td><td>Thumbnail filename for cards &amp; map popups. Auto-expands to <code>images/locations/{id}/thumbnail/{filename}</code>. Falls back to first photo if empty</td><td><code>thumb.jpg</code></td></tr>
+  <tr><td><code>banner</code></td><td>Banner image for the detail page hero. Auto-expands to <code>images/locations/{id}/banner/{filename}</code>. Falls back to first photo if empty</td><td><code>banner.jpg</code></td></tr>
+  <tr><td><code>notes</code></td><td>Your personal notes (wrap in quotes in CSV)</td><td><code>"Great location!"</code></td></tr>
+  <tr><td><code>favorite</code></td><td><code>TRUE</code> or <code>FALSE</code></td><td><code>FALSE</code></td></tr>
+</table>
+
+<h2>Paste CSV Here</h2>
+<textarea id="csv-input" placeholder="Paste your CSV content here..."></textarea>
+<br>
+<button onclick="convertCSV()">Convert to JSON</button>
+<button class="secondary" onclick="copyJSON()">Copy JSON</button>
+<button class="secondary" onclick="downloadJSON()">Download locations.json</button>
+
+<div id="message"></div>
+
+<h2>JSON Output</h2>
+<pre id="json-output">Your JSON will appear here after conversion.</pre>
+
+<script>
+  let lastJSON = '';
+
+  function parseCSVLine(line, delimiter) {
+    const result = [];
+    let current = '';
+    let inQuotes = false;
+    for (let i = 0; i < line.length; i++) {
+      const ch = line[i];
+      if (ch === '"') {
+        if (inQuotes && line[i + 1] === '"') { current += '"'; i++; }
+        else { inQuotes = !inQuotes; }
+      } else if (ch === delimiter && !inQuotes) {
+        result.push(current.trim());
+        current = '';
+      } else {
+        current += ch;
+      }
+    }
+    result.push(current.trim());
+    return result;
+  }
+
+  // Split a pipe-separated string into an array (empty string = empty array)
+  function splitPipe(str) {
+    if (!str || !str.trim()) return [];
+    return str.split('|').map(s => s.trim()).filter(Boolean);
+  }
+
+  // Expand filenames to full paths based on location id and type
+  // If already a full path (contains '/'), leave as-is
+  function expandPaths(filenames, id, type) {
+    if (!filenames || filenames.length === 0) return [];
+    const prefixes = {
+      pins: (id, fname) => `images/locations/${id}/pins/${fname}`,
+      tshirts: (id, fname) => `images/locations/${id}/tshirts/${fname}`,
+      photos: (id, fname) => `images/locations/${id}/photos/${fname}`
+    };
+    const fn = prefixes[type];
+    if (!fn) return filenames;
+    return filenames.map(f => f.includes('/') ? f : fn(id, f));
+  }
+
+  // Auto-detect delimiter: if header line has more semicolons than commas, use semicolon
+  function detectDelimiter(headerLine) {
+    const commas = (headerLine.match(/,/g) || []).length;
+    const semis = (headerLine.match(/;/g) || []).length;
+    return semis > commas ? ';' : ',';
+  }
+
+  function convertCSV() {
+    const raw = document.getElementById('csv-input').value.trim();
+    const msgEl = document.getElementById('message');
+    const outEl = document.getElementById('json-output');
+
+    if (!raw) {
+      msgEl.innerHTML = '<div class="msg err">Please paste your CSV content first.</div>';
+      return;
+    }
+
+    const lines = raw.split('\n').filter(l => l.trim());
+    const delimiter = detectDelimiter(lines[0]);
+    const headers = parseCSVLine(lines[0], delimiter);
+    const rows = [];
+    const errors = [];
+
+    for (let i = 1; i < lines.length; i++) {
+      const cols = parseCSVLine(lines[i], delimiter);
+      if (cols.length < 2) continue;
+
+      const row = {};
+      headers.forEach((h, idx) => { row[h.trim()] = cols[idx] !== undefined ? cols[idx] : ''; });
+
+      // Validate required fields
+      if (!row.id) { errors.push(`Row ${i + 1}: missing id`); return; }
+      if (!row.name) { errors.push(`Row ${i + 1}: missing name`); return; }
+
+      // Support both old (pin/tshirt) and new (pins/tshirts) column names
+      const pinsRaw = row.pins || row.pin || '';
+      const tshirtsRaw = row.tshirts || row.tshirt || '';
+      const photosRaw = row.photos || '';
+
+      const obj = {
+        id: row.id.toLowerCase().replace(/\s+/g, '-'),
+        name: row.name,
+        type: (row.type || 'cafe').toLowerCase(),
+        city: row.city,
+        country: row.country,
+        continent: row.continent,
+        lat: parseFloat(row.lat) || 0,
+        lng: parseFloat(row.lng) || 0,
+        visitDate: row.visitDate ? splitPipe(row.visitDate) : [],
+        plannedDate: row.plannedDate || null,
+        status: (row.status || 'visited').toLowerCase(),
+        isClosed: row.isClosed === 'TRUE' || row.isClosed === 'true' || row.isClosed === '1',
+        pins: expandPaths(splitPipe(pinsRaw), row.id, 'pins'),
+        tshirts: expandPaths(splitPipe(tshirtsRaw), row.id, 'tshirts'),
+        photos: expandPaths(splitPipe(photosRaw), row.id, 'photos'),
+        thumbnail: row.thumbnail ? `images/locations/${row.id.toLowerCase().replace(/\s+/g, '-')}/thumbnail/${row.thumbnail}` : '',
+        banner: row.banner ? `images/locations/${row.id.toLowerCase().replace(/\s+/g, '-')}/banner/${row.banner}` : '',
+        notes: row.notes || '',
+        favorite: row.favorite === 'TRUE' || row.favorite === 'true' || row.favorite === '1'
+      };
+
+      // Clean up empty strings to null
+      if (obj.visitDate.length === 0) obj.visitDate = [];
+      if (!obj.plannedDate) obj.plannedDate = null;
+
+      rows.push(obj);
+    }
+
+    if (errors.length > 0) {
+      msgEl.innerHTML = `<div class="msg err">${errors.join('<br>')}</div>`;
+      return;
+    }
+
+    lastJSON = JSON.stringify(rows, null, 2);
+    outEl.textContent = lastJSON;
+    msgEl.innerHTML = `<div class="msg ok">✅ Converted ${rows.length} locations successfully!</div>`;
+  }
+
+  function copyJSON() {
+    if (!lastJSON) { alert('Convert first!'); return; }
+    navigator.clipboard.writeText(lastJSON).then(() => {
+      document.getElementById('message').innerHTML = '<div class="msg ok">✅ JSON copied to clipboard! Paste it into data/locations.json</div>';
+    });
+  }
+
+  function downloadJSON() {
+    if (!lastJSON) { alert('Convert first!'); return; }
+    const blob = new Blob([lastJSON], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'locations.json';
+    a.click();
+  }
+</script>
+
+</body>
+</html>

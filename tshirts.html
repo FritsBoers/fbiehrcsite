@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Shirt Gallery — My Hard Rock Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🎸 My <span>HRC</span> Collection</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="locations.html">Locations</a>
+        <a href="pins.html">Pins</a>
+        <a href="tshirts.html">T-Shirts</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="map.html">Map</a>
+        <a href="trips.html">Planned Visits</a>
+        <a href="about.html">About</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- T-Shirt Gallery -->
+  <div class="pin-wall">
+    <div class="container">
+      <div class="page-header" style="margin-top: 0; background: none; padding-top: 20px;">
+        <h1>T-Shirt Gallery</h1>
+        <p>My collection of classic Hard Rock Cafe t-shirts</p>
+      </div>
+
+      <div class="filters" style="margin-bottom: 30px; justify-content: center;">
+        <div class="filter-group">
+          <label class="filter-label">Search</label>
+          <input type="text" id="tshirt-search" class="filter-input" placeholder="Search t-shirts...">
+        </div>
+        <div class="filter-group">
+          <label class="filter-label">Collection</label>
+          <select id="tshirt-collection" class="filter-select">
+            <option value="">All T-Shirts</option>
+            <option value="visited" selected>Visited</option>
+            <option value="notvisited">Not Visited</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label class="filter-label">Type</label>
+          <select id="tshirt-type" class="filter-select">
+            <option value="">All Types</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label class="filter-label">Continent</label>
+          <select id="tshirt-continent" class="filter-select">
+            <option value="">All Continents</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label class="filter-label">Country</label>
+          <select id="tshirt-country" class="filter-select">
+            <option value="">All Countries</option>
+          </select>
+        </div>
+        <div class="filter-group filter-group-btn">
+          <button class="btn-clear-filters" id="clear-filters" title="Clear all filters">✕ Clear Filters</button>
+        </div>
+      </div>
+
+      <div class="results-count" id="tshirt-count"></div>
+
+      <div class="tshirt-board" id="tshirt-grid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <button class="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next">&#10095;</button>
+    <img src="" alt="Enlarged photo">
+    <div class="lightbox-counter"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 My Hard Rock Collection. Not affiliated with Hard Rock International.</p>
+      <p style="margin-top: 5px;">Made by FBIE.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const data = await App.loadData();
+      const withTshirts = App.getVisited(data).filter(loc => loc.tshirts && loc.tshirts.length > 0);
+
+      // Not-visited t-shirts
+      const notVisitedTshirts = [
+        { img: 'images/othertshirts/notvisited/Montreal.JPG', label: 'Hard Rock Cafe Montreal' },
+        { img: 'images/othertshirts/notvisited/Ottowa.JPG', label: 'Hard Rock Cafe Ottawa' },
+        { img: 'images/othertshirts/notvisited/Pattaya.JPG', label: 'Hard Rock Cafe Pattaya' },
+        { img: 'images/othertshirts/notvisited/Santa Domingo.JPG', label: 'Hard Rock Cafe Santo Domingo' }
+      ];
+
+      // Populate filters
+      const continents = [...new Set(withTshirts.map(l => l.continent))].sort();
+      const countries = [...new Set(withTshirts.map(l => l.country))].sort();
+
+      const collectionSelect = document.getElementById('tshirt-collection');
+      const continentSelect = document.getElementById('tshirt-continent');
+      const countrySelect = document.getElementById('tshirt-country');
+      const typeSelect = document.getElementById('tshirt-type');
+
+      const types = [...new Set(withTshirts.map(l => l.type))].sort();
+
+      continents.forEach(c => {
+        continentSelect.innerHTML += `<option value="${App.escapeHtml(c)}">${App.escapeHtml(c)}</option>`;
+      });
+      countries.forEach(c => {
+        countrySelect.innerHTML += `<option value="${App.escapeHtml(c)}">${App.escapeHtml(c)}</option>`;
+      });
+      types.forEach(t => {
+        const label = t.charAt(0).toUpperCase() + t.slice(1);
+        typeSelect.innerHTML += `<option value="${App.escapeHtml(t)}">${App.escapeHtml(label)}</option>`;
+      });
+
+      function renderTshirts() {
+        const search = document.getElementById('tshirt-search').value.toLowerCase().trim();
+        const collection = collectionSelect.value;
+        const continent = continentSelect.value;
+        const country = countrySelect.value;
+        const type = typeSelect.value;
+
+        const grid = document.getElementById('tshirt-grid');
+        const countEl = document.getElementById('tshirt-count');
+
+        // Disable location-specific filters for not-visited collection
+        const isLocationFilter = collection === '' || collection === 'visited';
+        typeSelect.disabled = !isLocationFilter;
+        continentSelect.disabled = !isLocationFilter;
+        countrySelect.disabled = !isLocationFilter;
+
+        // Handle not-visited collection
+        if (collection === 'notvisited') {
+          let nvFiltered = [...notVisitedTshirts];
+          if (search) {
+            nvFiltered = nvFiltered.filter(t => t.label.toLowerCase().includes(search));
+          }
+          countEl.textContent = `${nvFiltered.length} t-shirt${nvFiltered.length !== 1 ? 's' : ''} (not visited locations)`;
+          if (nvFiltered.length === 0) {
+            grid.innerHTML = '<div class="empty-state"><div class="icon">👕</div><p>No t-shirts match your search.</p></div>';
+            countEl.textContent = '';
+          } else {
+            grid.innerHTML = nvFiltered.map(t => `
+              <div class="tshirt-card">
+                <img src="${t.img}" alt="${App.escapeHtml(t.label)}" data-lightbox
+                     onerror="this.src='${App.placeholderImg('T-Shirt', 280, 300)}'">
+                <div class="pin-info">
+                  <h4>${App.escapeHtml(t.label)}</h4>
+                </div>
+              </div>
+            `).join('');
+          }
+          return;
+        }
+
+        // Visited t-shirts
+        let filtered = [...withTshirts];
+
+        if (search) {
+          filtered = filtered.filter(loc =>
+            loc.name.toLowerCase().includes(search) ||
+            loc.city.toLowerCase().includes(search) ||
+            loc.country.toLowerCase().includes(search)
+          );
+        }
+        if (continent) filtered = filtered.filter(loc => loc.continent === continent);
+        if (country) filtered = filtered.filter(loc => loc.country === country);
+        if (type) filtered = filtered.filter(loc => loc.type === type);
+
+        // Flatten: each t-shirt image becomes its own item
+        const allTshirts = [];
+        filtered.forEach(loc => {
+          loc.tshirts.forEach((tImg, i) => {
+            allTshirts.push({ loc, tImg, index: i });
+          });
+        });
+
+        // If showing "all", append not-visited t-shirts
+        if (collection === '') {
+          let nvFiltered = [...notVisitedTshirts];
+          if (search) {
+            nvFiltered = nvFiltered.filter(t => t.label.toLowerCase().includes(search));
+          }
+          const totalCount = allTshirts.length + nvFiltered.length;
+          countEl.textContent = `${totalCount} t-shirt${totalCount !== 1 ? 's' : ''} from ${filtered.length} location${filtered.length !== 1 ? 's' : ''} + ${nvFiltered.length} not visited`;
+          grid.innerHTML = allTshirts.map(({ loc, tImg, index }) => `
+            <div class="tshirt-card">
+              <img src="${tImg}" alt="${App.escapeHtml(loc.city)} T-Shirt ${index + 1}" data-lightbox
+                   onerror="this.src='${App.placeholderImg(loc.city + ' T-Shirt', 280, 300)}'">
+              <div class="pin-info">
+                <h4>${App.escapeHtml(loc.name)}${loc.tshirts.length > 1 ? ' (#' + (index + 1) + ')' : ''}</h4>
+                <p>${App.formatShortDate(App.latestVisitDate(loc))}</p>
+              </div>
+            </div>
+          `).join('') + nvFiltered.map(t => `
+            <div class="tshirt-card">
+              <img src="${t.img}" alt="${App.escapeHtml(t.label)}" data-lightbox
+                   onerror="this.src='${App.placeholderImg('T-Shirt', 280, 300)}'">
+              <div class="pin-info">
+                <h4>${App.escapeHtml(t.label)}</h4>
+              </div>
+            </div>
+          `).join('');
+          return;
+        }
+
+        if (allTshirts.length === 0) {
+          grid.innerHTML = '<div class="empty-state"><div class="icon">👕</div><p>No t-shirts match your search.</p></div>';
+          countEl.textContent = '';
+        } else {
+          countEl.textContent = `${allTshirts.length} t-shirt${allTshirts.length !== 1 ? 's' : ''} from ${filtered.length} location${filtered.length !== 1 ? 's' : ''}`;
+          grid.innerHTML = allTshirts.map(({ loc, tImg, index }) => `
+            <div class="tshirt-card">
+              <img src="${tImg}" alt="${App.escapeHtml(loc.city)} T-Shirt ${index + 1}" data-lightbox
+                   onerror="this.src='${App.placeholderImg(loc.city + ' T-Shirt', 280, 300)}'">
+              <div class="pin-info">
+                <h4>${App.escapeHtml(loc.name)}${loc.tshirts.length > 1 ? ' (#' + (index + 1) + ')' : ''}</h4>
+                <p>${App.formatShortDate(App.latestVisitDate(loc))}</p>
+              </div>
+            </div>
+          `).join('');
+        }
+      }
+
+      // Events
+      document.querySelectorAll('#tshirt-search, #tshirt-collection, #tshirt-continent, #tshirt-country, #tshirt-type').forEach(el => {
+        el.addEventListener('input', renderTshirts);
+        el.addEventListener('change', renderTshirts);
+      });
+
+      document.getElementById('clear-filters').addEventListener('click', () => {
+        document.getElementById('tshirt-search').value = '';
+        document.getElementById('tshirt-collection').value = 'visited';
+        document.getElementById('tshirt-continent').value = '';
+        document.getElementById('tshirt-country').value = '';
+        document.getElementById('tshirt-type').value = '';
+        renderTshirts();
+      });
+
+      renderTshirts();
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location Detail — My Hard Rock Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🎸 My <span>HRC</span> Collection</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="locations.html">Locations</a>
+        <a href="pins.html">Pins</a>
+        <a href="tshirts.html">T-Shirts</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="map.html">Map</a>
+        <a href="trips.html">Planned Visits</a>
+        <a href="about.html">About</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Detail Hero -->
+  <div class="detail-hero" id="detail-hero">
+    <img class="detail-hero-img" id="hero-img" src="" alt="">
+    <div class="detail-hero-overlay">
+      <h1 class="detail-hero-title" id="detail-title"></h1>
+    </div>
+  </div>
+
+  <!-- Detail Content -->
+  <section class="section" style="padding-top: 40px;">
+    <div class="container">
+
+      <!-- Info Grid -->
+      <div class="detail-info" id="detail-info"></div>
+
+      <!-- Notes -->
+      <div class="detail-notes" id="detail-notes" style="display: none;">
+        <p id="detail-notes-text"></p>
+      </div>
+
+      <!-- Photo Gallery -->
+      <div id="photos-section" style="display: none;">
+        <h3 class="text-gold" style="margin-bottom: 15px;">My Photos</h3>
+        <div class="photo-gallery" id="photo-gallery"></div>
+      </div>
+
+      <!-- Collectibles -->
+      <div class="detail-collectibles" id="detail-collectibles"></div>
+
+      <!-- Prev/Next Navigation -->
+      <div class="detail-nav" id="detail-nav"></div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <button class="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next">&#10095;</button>
+    <img src="" alt="Enlarged photo">
+    <div class="lightbox-counter"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 My Hard Rock Collection. Not affiliated with Hard Rock International.</p>
+      <p style="margin-top: 5px;">Made by FBIE.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id');
+
+      if (!id) {
+        window.location.href = 'locations.html';
+        return;
+      }
+
+      const data = await App.loadData();
+      const loc = App.getById(data, id);
+
+      if (!loc) {
+        document.querySelector('.container').innerHTML =
+          '<div class="empty-state"><div class="icon">❌</div><p>Location not found.</p><a href="locations.html" class="btn btn-outline" style="margin-top:20px;">Back to Locations</a></div>';
+        return;
+      }
+
+      // Page title
+      document.title = `${loc.name} — My Hard Rock Collection`;
+
+      // Hero image
+      const heroImg = document.getElementById('hero-img');
+      const bannerPath = `images/locations/${loc.id}/banner/banner.jpg`;
+      const bannerSrc = loc.banner || bannerPath;
+      heroImg.src = bannerSrc;
+      heroImg.onerror = () => {
+        if (loc.photos && loc.photos.length > 0) {
+          heroImg.src = loc.photos[0];
+          heroImg.onerror = () => { heroImg.src = App.placeholderImg(loc.city, 1200, 400); };
+        } else {
+          heroImg.src = App.placeholderImg(loc.city, 1200, 400);
+        }
+      };
+      document.getElementById('detail-title').textContent = loc.name;
+
+      // Info grid
+      const closedTag = loc.isClosed ? ' <span class="badge badge-closed">Closed</span>' : '';
+      const infoItems = [
+        { label: 'Type', value: loc.type.charAt(0).toUpperCase() + loc.type.slice(1) },
+        { label: 'City', value: loc.city },
+        { label: 'Country', value: loc.country },
+        { label: 'Continent', value: loc.continent },
+        { label: 'Visit Date', value: loc.visitDate && loc.visitDate.length ? App.formatVisitDates(loc) : 'Planned: ' + App.formatDate(loc.plannedDate) },
+        { label: 'Status', value: (loc.isClosed ? 'Now Closed' : 'Open') }
+      ];
+      document.getElementById('detail-info').innerHTML = infoItems.map(item => `
+        <div class="detail-info-item">
+          <div class="detail-info-label">${item.label}</div>
+          <div class="detail-info-value">${App.escapeHtml(item.value)}</div>
+        </div>
+      `).join('');
+
+      // Notes
+      if (loc.notes) {
+        document.getElementById('detail-notes').style.display = 'block';
+        document.getElementById('detail-notes-text').textContent = loc.notes;
+      }
+
+      // Photo gallery
+      if (loc.photos && loc.photos.length > 0) {
+        document.getElementById('photos-section').style.display = 'block';
+        document.getElementById('photo-gallery').innerHTML = loc.photos.map(photo => `
+          <img src="${photo}" alt="Photo of ${App.escapeHtml(loc.name)}" data-lightbox
+               onerror="this.style.display='none'">
+        `).join('');
+      }
+
+      // Collectibles (pins + t-shirts)
+      const collectibles = [];
+      if (loc.pins && loc.pins.length > 0) {
+        collectibles.push(`
+          <div class="collectible-card">
+            <h3>My Pin${loc.pins.length > 1 ? 's' : ''} (${loc.pins.length})</h3>
+            <div class="photo-gallery" style="margin: 0;">
+              ${loc.pins.map((p, i) => `
+                <img src="${p}" alt="${App.escapeHtml(loc.name)} Pin ${i + 1}" data-lightbox
+                     onerror="this.src='${App.placeholderImg('Pin photo coming soon', 300, 300)}'"
+                     style="height: 200px; object-fit: contain;">
+              `).join('')}
+            </div>
+          </div>
+        `);
+      }
+      if (loc.tshirts && loc.tshirts.length > 0) {
+        collectibles.push(`
+          <div class="collectible-card">
+            <h3>My T-Shirt${loc.tshirts.length > 1 ? 's' : ''} (${loc.tshirts.length})</h3>
+            <div class="photo-gallery" style="margin: 0;">
+              ${loc.tshirts.map((t, i) => `
+                <img src="${t}" alt="${App.escapeHtml(loc.name)} T-Shirt ${i + 1}" data-lightbox
+                     onerror="this.src='${App.placeholderImg('T-shirt photo coming soon', 300, 300)}'"
+                     style="height: 200px; object-fit: contain;">
+              `).join('')}
+            </div>
+          </div>
+        `);
+      }
+      if (collectibles.length > 0) {
+        document.getElementById('detail-collectibles').innerHTML = collectibles.join('');
+      }
+
+      // Prev/Next navigation
+      const visited = App.getVisited(data).sort((a, b) => new Date(App.latestVisitDate(b)) - new Date(App.latestVisitDate(a)));
+      const currentIndex = visited.findIndex(l => l.id === loc.id);
+      const navEl = document.getElementById('detail-nav');
+      let navHtml = '';
+
+      if (currentIndex > 0) {
+        const prev = visited[currentIndex - 1];
+        navHtml += `<a href="location.html?id=${encodeURIComponent(prev.id)}">← ${App.escapeHtml(prev.city)}</a>`;
+      } else {
+        navHtml += '<span></span>';
+      }
+
+      navHtml += '<a href="locations.html" class="text-red">All Locations</a>';
+
+      if (currentIndex < visited.length - 1) {
+        const next = visited[currentIndex + 1];
+        navHtml += `<a href="location.html?id=${encodeURIComponent(next.id)}">${App.escapeHtml(next.city)} →</a>`;
+      } else {
+        navHtml += '<span></span>';
+      }
+
+      navEl.innerHTML = navHtml;
+    });
+  </script>
+
+</body>
+</html>

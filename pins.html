@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pins Gallery — My Hard Rock Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🎸 My <span>HRC</span> Collection</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="locations.html">Locations</a>
+        <a href="pins.html">Pins</a>
+        <a href="tshirts.html">T-Shirts</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="map.html">Map</a>
+        <a href="trips.html">Planned Visits</a>
+        <a href="about.html">About</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Pin Wall -->
+  <div class="pin-wall">
+    <div class="container">
+      <div class="page-header" style="margin-top: 0; background: none; padding-top: 20px;">
+        <h1>Pins Gallery</h1>
+        <p>My collection of Hard Rock Cafe pins from around the world</p>
+      </div>
+        <div class="filters" style="margin-bottom: 30px; justify-content: center;">
+          <div class="filter-group">
+            <label class="filter-label">Search</label>
+            <input type="text" id="pin-search" class="filter-input" placeholder="Search pins...">
+          </div>
+          <div class="filter-group">
+            <label class="filter-label">Collection</label>
+            <select id="pin-collection" class="filter-select">
+              <option value="">All Pins</option>
+              <option value="visited" selected>Visited</option>
+              <option value="notvisited">Not Visited</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label class="filter-label">Type</label>
+            <select id="pin-type" class="filter-select">
+              <option value="">All Types</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label class="filter-label">Continent</label>
+            <select id="pin-continent" class="filter-select">
+              <option value="">All Continents</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label class="filter-label">Country</label>
+            <select id="pin-country" class="filter-select">
+              <option value="">All Countries</option>
+            </select>
+          </div>
+          <div class="filter-group filter-group-btn">
+            <button class="btn-clear-filters" id="clear-filters" title="Clear all filters">✕ Clear Filters</button>
+          </div>
+        </div>
+        <div class="results-count" id="pin-count"></div>
+
+      <div class="pin-board" id="pin-board">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <button class="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next">&#10095;</button>
+    <img src="" alt="Enlarged photo">
+    <div class="lightbox-counter"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 My Hard Rock Collection. Not affiliated with Hard Rock International.</p>
+      <p style="margin-top: 5px;">Made by FBIE.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const data = await App.loadData();
+      const withPins = App.getVisited(data).filter(loc => loc.pins && loc.pins.length > 0);
+
+      // Not-visited pins (from otherpins/notivisited folder)
+      const notVisitedPins = Array.from({length: 16}, (_, i) => i + 1)
+        .filter(n => n !== 3)
+        .map(n => ({ pinImg: `images/otherpins/notivisited/${n}.jpg`, label: `Not Visited Pin ${n}` }));
+
+      // Other pins (from otherpins/other folder)
+      const otherPins = Array.from({length: 5}, (_, i) => i + 1)
+        .map(n => ({ pinImg: `images/otherpins/other/${n}.jpg`, label: `Other Pin ${n}` }));
+
+      // Populate filters
+      const continents = [...new Set(withPins.map(l => l.continent))].sort();
+      const countries = [...new Set(withPins.map(l => l.country))].sort();
+
+      const collectionSelect = document.getElementById('pin-collection');
+      const continentSelect = document.getElementById('pin-continent');
+      const countrySelect = document.getElementById('pin-country');
+      const typeSelect = document.getElementById('pin-type');
+
+      const types = [...new Set(withPins.map(l => l.type))].sort();
+
+      continents.forEach(c => {
+        continentSelect.innerHTML += `<option value="${App.escapeHtml(c)}">${App.escapeHtml(c)}</option>`;
+      });
+      countries.forEach(c => {
+        countrySelect.innerHTML += `<option value="${App.escapeHtml(c)}">${App.escapeHtml(c)}</option>`;
+      });
+      types.forEach(t => {
+        const label = t.charAt(0).toUpperCase() + t.slice(1);
+        typeSelect.innerHTML += `<option value="${App.escapeHtml(t)}">${App.escapeHtml(label)}</option>`;
+      });
+
+      function renderPins() {
+        const search = document.getElementById('pin-search').value.toLowerCase().trim();
+        const collection = collectionSelect.value;
+        const continent = continentSelect.value;
+        const country = countrySelect.value;
+        const type = typeSelect.value;
+
+        const board = document.getElementById('pin-board');
+        const countEl = document.getElementById('pin-count');
+
+        // Disable location-specific filters for non-visited collections
+        const isLocationFilter = collection === '' || collection === 'visited';
+        typeSelect.disabled = !isLocationFilter;
+        continentSelect.disabled = !isLocationFilter;
+        countrySelect.disabled = !isLocationFilter;
+
+        // Handle not-visited and other collections
+        if (collection === 'notvisited' || collection === 'other') {
+          const pins = collection === 'notvisited' ? notVisitedPins : otherPins;
+          const label = collection === 'notvisited' ? 'not visited locations' : 'other';
+          countEl.textContent = `${pins.length} pin${pins.length !== 1 ? 's' : ''} (${label})`;
+          board.innerHTML = pins.map(p => `
+            <div class="pin-item">
+              <img src="${p.pinImg}" alt="${App.escapeHtml(p.label)}" data-lightbox
+                   onerror="this.src='${App.placeholderImg('Pin', 140, 140)}'">
+              <div class="pin-info">
+                <h4>${App.escapeHtml(p.label)}</h4>
+              </div>
+            </div>
+          `).join('');
+          return;
+        }
+
+        // Visited pins (with optional "all" that includes everything)
+        let filtered = [...withPins];
+
+        if (search) {
+          filtered = filtered.filter(loc =>
+            loc.name.toLowerCase().includes(search) ||
+            loc.city.toLowerCase().includes(search) ||
+            loc.country.toLowerCase().includes(search)
+          );
+        }
+        if (continent) filtered = filtered.filter(loc => loc.continent === continent);
+        if (country) filtered = filtered.filter(loc => loc.country === country);
+        if (type) filtered = filtered.filter(loc => loc.type === type);
+
+        // Flatten: each pin image becomes its own item on the board
+        const allPins = [];
+        filtered.forEach(loc => {
+          loc.pins.forEach((pinImg, i) => {
+            allPins.push({ loc, pinImg, index: i });
+          });
+        });
+
+        // If showing "all", append not-visited and other pins
+        if (collection === '') {
+          const extraPins = [...notVisitedPins, ...otherPins];
+          const totalPins = allPins.length + extraPins.length;
+          const totalLocs = filtered.length;
+          countEl.textContent = `${totalPins} pin${totalPins !== 1 ? 's' : ''} from ${totalLocs} location${totalLocs !== 1 ? 's' : ''} + ${extraPins.length} other`;
+          board.innerHTML = allPins.map(({ loc, pinImg, index }) => `
+            <div class="pin-item">
+              <img src="${pinImg}" alt="${App.escapeHtml(loc.city)} Pin ${index + 1}" data-lightbox
+                   onerror="this.src='${App.placeholderImg(loc.city, 140, 140)}'">
+              <div class="pin-info">
+                <h4>${App.escapeHtml(loc.name)}${loc.pins.length > 1 ? ' (#' + (index + 1) + ')' : ''}</h4>
+                <p>${App.formatShortDate(App.latestVisitDate(loc))}</p>
+              </div>
+            </div>
+          `).join('') + extraPins.map(p => `
+            <div class="pin-item">
+              <img src="${p.pinImg}" alt="${App.escapeHtml(p.label)}" data-lightbox
+                   onerror="this.src='${App.placeholderImg('Pin', 140, 140)}'">
+              <div class="pin-info">
+                <h4>${App.escapeHtml(p.label)}</h4>
+              </div>
+            </div>
+          `).join('');
+          return;
+        }
+
+        if (allPins.length === 0) {
+          board.innerHTML = '<div class="empty-state" style="grid-column: 1/-1;"><div class="icon">📌</div><p>No pins match your search.</p></div>';
+          countEl.textContent = '';
+        } else {
+          countEl.textContent = `${allPins.length} pin${allPins.length !== 1 ? 's' : ''} from ${filtered.length} location${filtered.length !== 1 ? 's' : ''}`;
+          board.innerHTML = allPins.map(({ loc, pinImg, index }) => `
+            <div class="pin-item">
+              <img src="${pinImg}" alt="${App.escapeHtml(loc.city)} Pin ${index + 1}" data-lightbox
+                   onerror="this.src='${App.placeholderImg(loc.city, 140, 140)}'">
+              <div class="pin-info">
+                <h4>${App.escapeHtml(loc.name)}${loc.pins.length > 1 ? ' (#' + (index + 1) + ')' : ''}</h4>
+                <p>${App.formatShortDate(App.latestVisitDate(loc))}</p>
+              </div>
+            </div>
+          `).join('');
+        }
+      }
+
+      // Events
+      document.querySelectorAll('#pin-search, #pin-collection, #pin-continent, #pin-country, #pin-type').forEach(el => {
+        el.addEventListener('input', renderPins);
+        el.addEventListener('change', renderPins);
+      });
+
+      document.getElementById('clear-filters').addEventListener('click', () => {
+        document.getElementById('pin-search').value = '';
+        document.getElementById('pin-collection').value = 'visited';
+        document.getElementById('pin-continent').value = '';
+        document.getElementById('pin-country').value = '';
+        document.getElementById('pin-type').value = '';
+        renderPins();
+      });
+
+      renderPins();
+    });
+  </script>
+
+</body>
+</html>

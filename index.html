@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hard Rock Collection — Cafes, Pins & More</title>
+  <meta name="description" content="Follow my journey visiting Hard Rock Cafes and Hotels around the world. Collection of 100+ pins and classic t-shirts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🎸 My <span>HRC</span> Collection</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="locations.html">Locations</a>
+        <a href="pins.html">Pins</a>
+        <a href="tshirts.html">T-Shirts</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="map.html">Map</a>
+        <a href="trips.html">Planned Visits</a>
+        <a href="about.html">About</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">My Hard Rock <span>Collection</span></h1>
+      <p class="hero-subtitle">Traveling the world, from Amsterdam to Bali.<br>Collecting pins, t-shirts, and memories since 2016.</p>
+
+      <div class="counters" id="hero-counters">
+        <!-- Populated by JS -->
+      </div>
+
+      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <a href="locations.html" class="btn btn-primary">View All Locations</a>
+        <a href="map.html" class="btn btn-outline">Explore the Map</a>
+        <a href="timeline.html" class="btn btn-outline">See My Timeline</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Additions -->
+  <section class="section fade-in" style="background: var(--dark-gray);">
+    <div class="container">
+      <h2 class="section-title">Latest Additions</h2>
+      <div class="latest-grid" id="latest-additions">
+        <!-- Populated by JS -->
+      </div>
+      <div class="text-center" style="margin-top: 40px;">
+        <a href="locations.html" class="btn btn-outline">View All Locations</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Visits -->
+  <section class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">Upcoming Visits</h2>
+      <div class="trips-grid" id="upcoming-trips">
+        <!-- Populated by JS -->
+      </div>
+      <div id="no-upcoming" style="display: none;" class="empty-state">
+        <div class="icon">✈️</div>
+        <p>No visits planned yet. Stay tuned!</p>
+      </div>
+      <div class="text-center" style="margin-top: 40px;">
+        <a href="trips.html" class="btn btn-outline">View All Planned Visits</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section class="about section fade-in">
+    <div class="container">
+      <div class="about-grid">
+        <img src="images/about/profile.jpg" alt="About me" class="about-photo"
+             onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22300%22%20height%3D%22300%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%232d2d2d%22/%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23555%22%20font-family%3D%22sans-serif%22%20font-size%3D%2214%22%3EYour%20Photo%3C/text%3E%3C/svg%3E'">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hi there! I'm a passionate Hard Rock Cafe fan from the Netherlands, and my journey started
+            in the mid-90s. What began as a casual visit to my first Hard Rock Café in Los Angeles soon
+            grew into a lifelong passion traveling the world to collect pins and classic t-shirts from
+            every Hard Rock Cafe, Hotel, and Rock Shop I come across.
+          </p>
+          <p>
+            With over 100 visits, more than 140 pins, and over 100 t-shirts in my collection, each item
+            tells its own story. Through this site, I want to share that passion with fellow collectors
+            and Hard Rock fans around the world.
+          </p>
+          <p>
+            Whether you're a seasoned collector or just curious, I hope this inspires you to visit
+            a Hard Rock Cafe on your next trip.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <button class="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next">&#10095;</button>
+    <img src="" alt="Enlarged photo">
+    <div class="lightbox-counter"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 My Hard Rock Collection. Not affiliated with Hard Rock International.</p>
+      <p style="margin-top: 5px;">Made by FBIE.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/counters.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const data = await App.loadData();
+      const visited = App.getVisited(data);
+
+      // --- Counters ---
+      const countersEl = document.getElementById('hero-counters');
+      const stats = [
+        { target: visited.length, label: 'Total Visited', highlight: true },
+        { target: App.getCafes(visited).length, label: 'Cafes' },
+        { target: App.getHotels(visited).length, label: 'Hotels' },
+        { target: App.getRockShops(visited).length, label: 'Rock Shops' },
+        { target: App.getVisitedCountries(data).length, label: 'Countries' },
+        { target: App.getPinsCount(data) + 20, label: 'Pins' },
+        { target: App.getTshirtsCount(data), label: 'T-Shirts' },
+        { target: App.getPlanned(data).length, label: 'Visits Planned' }
+      ];
+      countersEl.innerHTML = stats.map(s => `
+        <div class="counter-item${s.highlight ? ' counter-highlight' : ''}">
+          <div class="counter-number" data-target="${s.target}">0</div>
+          <div class="counter-label">${s.label}</div>
+        </div>
+      `).join('');
+      animateCounters();
+
+      // --- Latest Additions ---
+      const latestEl = document.getElementById('latest-additions');
+      const latest = App.getLatestVisits(data, 3);
+      latestEl.innerHTML = latest.map(loc => App.locationCard(loc)).join('');
+
+      // --- Upcoming Visits ---
+      const planned = App.getPlanned(data).sort((a, b) => new Date(a.plannedDate) - new Date(b.plannedDate));
+      const upcomingEl = document.getElementById('upcoming-trips');
+      const noUpcomingEl = document.getElementById('no-upcoming');
+
+      if (planned.length === 0) {
+        noUpcomingEl.style.display = 'block';
+        upcomingEl.style.display = 'none';
+      } else {
+        function getCountdown(dateStr) {
+          const target = new Date(dateStr);
+          const now = new Date();
+          const diff = target - now;
+          if (diff <= 0) return 'Any day now!';
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          if (days > 30) {
+            const months = Math.floor(days / 30);
+            const remDays = days % 30;
+            return `${months} month${months > 1 ? 's' : ''}, ${remDays} day${remDays !== 1 ? 's' : ''}`;
+          }
+          return `${days} day${days !== 1 ? 's' : ''}`;
+        }
+
+        upcomingEl.innerHTML = planned.map(loc => `
+          <div class="trip-card">
+            <h3>${App.escapeHtml(loc.name)}</h3>
+            <div class="trip-location">${App.escapeHtml(loc.city)}, ${App.escapeHtml(loc.country)} · ${App.escapeHtml(loc.continent)}</div>
+            <div class="trip-date">📅 ${App.formatDate(loc.plannedDate)}</div>
+            <div class="trip-countdown">${getCountdown(loc.plannedDate)}</div>
+            <div class="trip-countdown-label">to go</div>
+          </div>
+        `).join('');
+      }
+      // --- Scroll animations ---
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>

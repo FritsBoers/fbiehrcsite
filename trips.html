@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planned Visits — My Hard Rock Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🎸 My <span>HRC</span> Collection</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="locations.html">Locations</a>
+        <a href="pins.html">Pins</a>
+        <a href="tshirts.html">T-Shirts</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="map.html">Map</a>
+        <a href="trips.html">Planned Visits</a>
+        <a href="about.html">About</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Trips Page -->
+  <div class="trips-page">
+    <div class="container">
+      <div class="page-header" style="margin-top: 0; background: none; padding-top: 20px;">
+        <h1>Planned Visits</h1>
+        <p>My upcoming Hard Rock Cafe visits</p>
+      </div>
+
+      <!-- Next Trip Highlight -->
+      <div id="next-trip-highlight" style="margin-bottom: 50px;"></div>
+
+      <!-- Trip Cards -->
+      <div class="trips-grid" id="trips-grid">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- No trips state -->
+      <div id="no-trips" style="display: none;" class="empty-state">
+        <div class="icon">✈️</div>
+        <p>No visits planned yet. Check back soon!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 My Hard Rock Collection. Not affiliated with Hard Rock International.</p>
+      <p style="margin-top: 5px;">Made by FBIE.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const data = await App.loadData();
+      const planned = App.getPlanned(data).sort((a, b) => new Date(a.plannedDate) - new Date(b.plannedDate));
+
+      if (planned.length === 0) {
+        document.getElementById('no-trips').style.display = 'block';
+        return;
+      }
+
+      // Countdown helper
+      function getCountdown(dateStr) {
+        const target = new Date(dateStr);
+        const now = new Date();
+        const diff = target - now;
+        if (diff <= 0) return 'Any day now!';
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        if (days > 30) {
+          const months = Math.floor(days / 30);
+          const remDays = days % 30;
+          return `${months} month${months > 1 ? 's' : ''}, ${remDays} day${remDays !== 1 ? 's' : ''}`;
+        }
+        return `${days} day${days !== 1 ? 's' : ''}`;
+      }
+
+      // Next trip highlight
+      const nextTrip = planned[0];
+      document.getElementById('next-trip-highlight').innerHTML = `
+        <div style="background: linear-gradient(135deg, var(--dark-gray), var(--mid-gray)); border-radius: var(--border-radius); padding: 40px; text-align: center; border: 2px solid var(--gold);">
+          <p style="color: var(--light-gray); text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 10px;">Next Destination</p>
+          <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--black); margin-bottom: 5px;">${App.escapeHtml(nextTrip.name)}</h2>
+          <p style="color: var(--gold); font-size: 1.1rem; margin-bottom: 20px;">${App.escapeHtml(nextTrip.city)}, ${App.escapeHtml(nextTrip.country)}</p>
+          <div class="trip-countdown">${getCountdown(nextTrip.plannedDate)}</div>
+          <div class="trip-countdown-label">until takeoff</div>
+          <p style="color: var(--light-gray); margin-top: 15px; font-size: 0.9rem;">Planned for ${App.formatDate(nextTrip.plannedDate)}</p>
+        </div>
+      `;
+
+      // Trip cards
+      const grid = document.getElementById('trips-grid');
+      grid.innerHTML = planned.map(loc => `
+        <div class="trip-card">
+          <h3>${App.escapeHtml(loc.name)}</h3>
+          <div class="trip-location">${App.escapeHtml(loc.city)}, ${App.escapeHtml(loc.country)} · ${App.escapeHtml(loc.continent)}</div>
+          <div class="trip-date">📅 Planned for ${App.formatDate(loc.plannedDate)}</div>
+          ${loc.notes ? `<p style="color: var(--light-gray); font-size: 0.9rem; margin-top: 10px; font-style: italic;">${App.escapeHtml(loc.notes)}</p>` : ''}
+          <div class="trip-countdown">${getCountdown(loc.plannedDate)}</div>
+          <div class="trip-countdown-label">to go</div>
+        </div>
+      `).join('');
+    });
+  </script>
+
+</body>
+</html>
