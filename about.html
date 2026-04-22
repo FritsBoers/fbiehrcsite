@@ -197,7 +197,8 @@
       // All visit dates flattened with year-month
       const allVisits = [];
       visited.forEach(loc => {
-        (loc.visitDate || []).forEach(d => {
+        const dates = Array.isArray(loc.visitDate) ? loc.visitDate : (loc.visitDate ? [loc.visitDate] : []);
+        dates.forEach(d => {
           allVisits.push({ loc, date: d, year: d.substring(0, 4), month: d.substring(0, 7) });
         });
       });
@@ -222,7 +223,10 @@
 
       // Latest visit
       const latestDate = allVisits.map(v => v.date).sort().pop();
-      const latestLocs = visited.filter(l => (l.visitDate || []).includes(latestDate));
+      const latestLocs = visited.filter(l => {
+        const dates = Array.isArray(l.visitDate) ? l.visitDate : (l.visitDate ? [l.visitDate] : []);
+        return dates.includes(latestDate);
+      });
       const latestName = latestLocs.length ? latestLocs[0].name : '';
 
       const facts = [
