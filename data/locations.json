@@ -1286,7 +1286,7 @@
         "lat":  51.5074,
         "lng":  -0.1278,
         "visitDate":  [
-                          "2022-22",
+                          "2022-12",
                           "2016-02"
                       ],
         "status":  "visited",
@@ -1315,7 +1315,7 @@
         "continent":  "Europe",
         "lat":  51.5074,
         "lng":  -0.1278,
-        "visitDate":  "2",
+        "visitDate":  "2022-12",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -1340,7 +1340,7 @@
         "continent":  "Europe",
         "lat":  51.5074,
         "lng":  -0.1278,
-        "visitDate":  "2",
+        "visitDate":  "2022-12",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -1365,7 +1365,7 @@
         "continent":  "Europe",
         "lat":  51.5074,
         "lng":  -0.1278,
-        "visitDate":  "2",
+        "visitDate":  "2022-12",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
