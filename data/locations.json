@@ -8,7 +8,7 @@
         "continent":  "Europe",
         "lat":  52.3731,
         "lng":  4.8925,
-        "visitDate":  "2",
+        "visitDate":  "2022-01",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -62,7 +62,7 @@
         "continent":  "Asia",
         "lat":  13.3618,
         "lng":  103.859,
-        "visitDate":  "2",
+        "visitDate":  "2017-07",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -88,7 +88,7 @@
         "continent":  "Europe",
         "lat":  51.2211,
         "lng":  4.3997,
-        "visitDate":  "2",
+        "visitDate":  "2019-05",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -143,7 +143,7 @@
         "continent":  "Asia",
         "lat":  -8.2271,
         "lng":  115.1919,
-        "visitDate":  "2",
+        "visitDate":  "2023-07",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -201,7 +201,7 @@
         "continent":  "Asia",
         "lat":  -8.2271,
         "lng":  115.1919,
-        "visitDate":  "2",
+        "visitDate":  "2023-07",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -226,7 +226,7 @@
         "continent":  "Asia",
         "lat":  13.7525,
         "lng":  100.4935,
-        "visitDate":  "1",
+        "visitDate":  "1999-09",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -282,7 +282,7 @@
         "continent":  "Europe",
         "lat":  41.3826,
         "lng":  2.1771,
-        "visitDate":  "2",
+        "visitDate":  "2024-10",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -307,7 +307,7 @@
         "continent":  "Asia",
         "lat":  39.9057,
         "lng":  116.3913,
-        "visitDate":  "1",
+        "visitDate":  "1996-07",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -335,7 +335,7 @@
         "continent":  "Europe",
         "lat":  52.5174,
         "lng":  13.3951,
-        "visitDate":  "1",
+        "visitDate":  "1996-12",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -361,7 +361,7 @@
         "continent":  "Europe",
         "lat":  52.5174,
         "lng":  13.3951,
-        "visitDate":  "2",
+        "visitDate":  "2025-09",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -386,7 +386,7 @@
         "continent":  "Europe",
         "lat":  50.8467,
         "lng":  4.3525,
-        "visitDate":  "2",
+        "visitDate":  "2022-08",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -441,7 +441,7 @@
         "continent":  "Europe",
         "lat":  47.4814,
         "lng":  19.1458,
-        "visitDate":  "2",
+        "visitDate":  "2023-10",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -467,7 +467,7 @@
         "continent":  "Europe",
         "lat":  47.4814,
         "lng":  19.1458,
-        "visitDate":  "2",
+        "visitDate":  "2023-10",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -492,7 +492,7 @@
         "continent":  "South America",
         "lat":  -34.6096,
         "lng":  -58.3888,
-        "visitDate":  "2",
+        "visitDate":  "2016-04",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -517,7 +517,7 @@
         "continent":  "North America",
         "lat":  21.1527,
         "lng":  -86.8426,
-        "visitDate":  "2",
+        "visitDate":  "2002-07",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -542,7 +542,7 @@
         "continent":  "Africa",
         "lat":  -33.9288,
         "lng":  18.4172,
-        "visitDate":  "1",
+        "visitDate":  "1998-10",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -567,7 +567,7 @@
         "continent":  "North America",
         "lat":  41.8756,
         "lng":  -87.6244,
-        "visitDate":  "2",
+        "visitDate":  "2005-08",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -592,7 +592,7 @@
         "continent":  "North America",
         "lat":  41.8756,
         "lng":  -87.6244,
-        "visitDate":  "2",
+        "visitDate":  "2005-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -617,7 +617,7 @@
         "continent":  "Europe",
         "lat":  50.9384,
         "lng":  6.96,
-        "visitDate":  "2",
+        "visitDate":  "2022-01",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -643,7 +643,7 @@
         "continent":  "Europe",
         "lat":  55.6867,
         "lng":  12.5701,
-        "visitDate":  "2",
+        "visitDate":  "2011-12",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -668,7 +668,7 @@
         "continent":  "North America",
         "lat":  20.4321,
         "lng":  -86.9207,
-        "visitDate":  "2",
+        "visitDate":  "2002-07",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -754,7 +754,7 @@
         "continent":  "Europe",
         "lat":  54.4288,
         "lng":  18.7983,
-        "visitDate":  "2",
+        "visitDate":  "2021-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -779,7 +779,7 @@
         "continent":  "Europe",
         "lat":  55.8612,
         "lng":  -4.2502,
-        "visitDate":  "2",
+        "visitDate":  "2022-10",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -804,7 +804,7 @@
         "continent":  "Europe",
         "lat":  27.958,
         "lng":  -15.6062,
-        "visitDate":  "2",
+        "visitDate":  "2005-05",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -830,7 +830,7 @@
         "continent":  "Europe",
         "lat":  53.5502,
         "lng":  10.0013,
-        "visitDate":  "2",
+        "visitDate":  "2021-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -855,7 +855,7 @@
         "continent":  "Asia",
         "lat":  10.7755,
         "lng":  106.7021,
-        "visitDate":  "2",
+        "visitDate":  "2016-08",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -880,7 +880,7 @@
         "continent":  "North America",
         "lat":  34.098,
         "lng":  -118.3295,
-        "visitDate":  "2",
+        "visitDate":  "2022-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -905,7 +905,7 @@
         "continent":  "North America",
         "lat":  34.098,
         "lng":  -118.3295,
-        "visitDate":  "2",
+        "visitDate":  "2022-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -930,7 +930,7 @@
         "continent":  "Asia",
         "lat":  22.3492,
         "lng":  114.1858,
-        "visitDate":  "2",
+        "visitDate":  "2002-09",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -955,7 +955,7 @@
         "continent":  "Asia",
         "lat":  22.3492,
         "lng":  114.1858,
-        "visitDate":  "2",
+        "visitDate":  "2002-09",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -980,7 +980,7 @@
         "continent":  "Europe",
         "lat":  38.9744,
         "lng":  1.4197,
-        "visitDate":  "2",
+        "visitDate":  "2019-10",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1005,7 +1005,7 @@
         "continent":  "Europe",
         "lat":  38.9744,
         "lng":  1.4197,
-        "visitDate":  "2",
+        "visitDate":  "2019-10",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -1030,7 +1030,7 @@
         "continent":  "Europe",
         "lat":  47.2654,
         "lng":  11.3928,
-        "visitDate":  "2",
+        "visitDate":  "2025-03",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -1055,7 +1055,7 @@
         "continent":  "Asia",
         "lat":  -6.1754,
         "lng":  106.8272,
-        "visitDate":  "2",
+        "visitDate":  "2001-07",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -1109,7 +1109,7 @@
         "continent":  "Asia",
         "lat":  9.5014,
         "lng":  99.9956,
-        "visitDate":  "2",
+        "visitDate":  "2017-07",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -1134,7 +1134,7 @@
         "continent":  "Europe",
         "lat":  50.0619,
         "lng":  19.9369,
-        "visitDate":  "2",
+        "visitDate":  "2021-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1159,7 +1159,7 @@
         "continent":  "Asia",
         "lat":  3.1517,
         "lng":  101.6942,
-        "visitDate":  "2",
+        "visitDate":  "2014-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1209,7 +1209,7 @@
         "continent":  "North America",
         "lat":  36.1674,
         "lng":  -115.1484,
-        "visitDate":  "1",
+        "visitDate":  "1995-07",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1234,7 +1234,7 @@
         "continent":  "South America",
         "lat":  -12.046,
         "lng":  -77.0306,
-        "visitDate":  "2",
+        "visitDate":  "2001-08",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -1260,7 +1260,7 @@
         "continent":  "Europe",
         "lat":  38.7078,
         "lng":  -9.1366,
-        "visitDate":  "2",
+        "visitDate":  "2022-04",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1286,7 +1286,7 @@
         "lat":  51.5074,
         "lng":  -0.1278,
         "visitDate":  [
-                          "2022-12",
+                          "2022-22",
                           "2016-02"
                       ],
         "status":  "visited",
@@ -1315,7 +1315,7 @@
         "continent":  "Europe",
         "lat":  51.5074,
         "lng":  -0.1278,
-        "visitDate":  "2022-12",
+        "visitDate":  "2022-22",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -1340,7 +1340,7 @@
         "continent":  "Europe",
         "lat":  51.5074,
         "lng":  -0.1278,
-        "visitDate":  "2022-12",
+        "visitDate":  "2022-22",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -1365,7 +1365,7 @@
         "continent":  "Europe",
         "lat":  51.5074,
         "lng":  -0.1278,
-        "visitDate":  "2022-12",
+        "visitDate":  "2022-22",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1390,7 +1390,7 @@
         "continent":  "North America",
         "lat":  34.0537,
         "lng":  -118.2428,
-        "visitDate":  "1",
+        "visitDate":  "1995-07",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -1415,7 +1415,7 @@
         "continent":  "Europe",
         "lat":  45.7578,
         "lng":  4.832,
-        "visitDate":  "2",
+        "visitDate":  "2023-11",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -1440,7 +1440,7 @@
         "continent":  "Europe",
         "lat":  40.4168,
         "lng":  -3.7035,
-        "visitDate":  "2",
+        "visitDate":  "2022-06",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1466,7 +1466,7 @@
         "continent":  "Europe",
         "lat":  36.7213,
         "lng":  -4.4216,
-        "visitDate":  "2",
+        "visitDate":  "2025-12",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1492,7 +1492,7 @@
         "continent":  "Europe",
         "lat":  39.6134,
         "lng":  2.8829,
-        "visitDate":  "2",
+        "visitDate":  "2006-09",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1517,7 +1517,7 @@
         "continent":  "Europe",
         "lat":  35.8597,
         "lng":  14.4893,
-        "visitDate":  "2",
+        "visitDate":  "2023-10",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1542,7 +1542,7 @@
         "continent":  "Europe",
         "lat":  35.9199,
         "lng":  14.4877,
-        "visitDate":  "2",
+        "visitDate":  "2023-10",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1595,7 +1595,7 @@
         "continent":  "Europe",
         "lat":  36.509,
         "lng":  -4.8856,
-        "visitDate":  "2",
+        "visitDate":  "2025-12",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1620,7 +1620,7 @@
         "continent":  "Asia",
         "lat":  2.3294,
         "lng":  102.2881,
-        "visitDate":  "2",
+        "visitDate":  "2014-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1645,7 +1645,7 @@
         "continent":  "Oceania",
         "lat":  -37.8142,
         "lng":  144.9632,
-        "visitDate":  "2",
+        "visitDate":  "2002-09",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -1698,7 +1698,7 @@
         "continent":  "Europe",
         "lat":  45.4642,
         "lng":  9.1896,
-        "visitDate":  "2",
+        "visitDate":  "2025-10",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1723,7 +1723,7 @@
         "continent":  "Europe",
         "lat":  48.1371,
         "lng":  11.5754,
-        "visitDate":  "2",
+        "visitDate":  "2025-03",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1776,7 +1776,7 @@
         "continent":  "North America",
         "lat":  40.7127,
         "lng":  -74.006,
-        "visitDate":  "2",
+        "visitDate":  "2022-06",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1801,7 +1801,7 @@
         "continent":  "North America",
         "lat":  43.1066,
         "lng":  -79.0639,
-        "visitDate":  "2",
+        "visitDate":  "2005-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1828,7 +1828,7 @@
         "continent":  "North America",
         "lat":  43.0848,
         "lng":  -79.0702,
-        "visitDate":  "2",
+        "visitDate":  "2005-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1853,7 +1853,7 @@
         "continent":  "Europe",
         "lat":  43.7009,
         "lng":  7.2684,
-        "visitDate":  "2",
+        "visitDate":  "2023-08",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -1906,7 +1906,7 @@
         "continent":  "North America",
         "lat":  28.5421,
         "lng":  -81.379,
-        "visitDate":  "2",
+        "visitDate":  "2022-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1956,7 +1956,7 @@
         "continent":  "Europe",
         "lat":  59.9133,
         "lng":  10.739,
-        "visitDate":  "2",
+        "visitDate":  "2012-07",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -1981,7 +1981,7 @@
         "continent":  "Europe",
         "lat":  48.8535,
         "lng":  2.3484,
-        "visitDate":  "2",
+        "visitDate":  "2005-11",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -2008,7 +2008,7 @@
         "continent":  "Asia",
         "lat":  5.4065,
         "lng":  100.2559,
-        "visitDate":  "2",
+        "visitDate":  "2014-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -2033,7 +2033,7 @@
         "continent":  "Asia",
         "lat":  5.4065,
         "lng":  100.2559,
-        "visitDate":  "2",
+        "visitDate":  "2014-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -2058,7 +2058,7 @@
         "continent":  "Europe",
         "lat":  41.1502,
         "lng":  -8.6103,
-        "visitDate":  "2",
+        "visitDate":  "2019-12",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -2083,7 +2083,7 @@
         "continent":  "Europe",
         "lat":  50.0875,
         "lng":  14.4213,
-        "visitDate":  "2",
+        "visitDate":  "2021-10",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -2109,7 +2109,7 @@
         "continent":  "Europe",
         "lat":  64.146,
         "lng":  -21.9422,
-        "visitDate":  "2",
+        "visitDate":  "2003-12",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -2134,7 +2134,7 @@
         "continent":  "Europe",
         "lat":  41.8933,
         "lng":  12.4829,
-        "visitDate":  "2",
+        "visitDate":  "2011-03",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -2159,7 +2159,7 @@
         "continent":  "North America",
         "lat":  40.7596,
         "lng":  -111.8868,
-        "visitDate":  "2",
+        "visitDate":  "2005-08",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -2185,7 +2185,7 @@
         "continent":  "North America",
         "lat":  37.7879,
         "lng":  -122.4075,
-        "visitDate":  "1",
+        "visitDate":  "1995-07",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -2210,7 +2210,7 @@
         "continent":  "North America",
         "lat":  9.9328,
         "lng":  -84.0796,
-        "visitDate":  "2",
+        "visitDate":  "2018-07",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -2235,7 +2235,7 @@
         "continent":  "North America",
         "lat":  18.4653,
         "lng":  -66.1167,
-        "visitDate":  "2",
+        "visitDate":  "2012-09",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -2260,7 +2260,7 @@
         "continent":  "North America",
         "lat":  47.6038,
         "lng":  -122.3301,
-        "visitDate":  "2",
+        "visitDate":  "2010-07",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -2285,7 +2285,7 @@
         "continent":  "Asia",
         "lat":  22.5446,
         "lng":  114.0545,
-        "visitDate":  "2",
+        "visitDate":  "2024-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -2310,7 +2310,7 @@
         "continent":  "Asia",
         "lat":  22.5446,
         "lng":  114.0545,
-        "visitDate":  "2",
+        "visitDate":  "2024-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -2335,7 +2335,7 @@
         "continent":  "Asia",
         "lat":  1.3571,
         "lng":  103.8195,
-        "visitDate":  "2",
+        "visitDate":  "2023-07",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -2360,7 +2360,7 @@
         "continent":  "Asia",
         "lat":  1.3571,
         "lng":  103.8195,
-        "visitDate":  "2",
+        "visitDate":  "2023-07",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -2385,7 +2385,7 @@
         "continent":  "North America",
         "lat":  18.3429,
         "lng":  -64.9189,
-        "visitDate":  "2",
+        "visitDate":  "2012-09",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -2411,7 +2411,7 @@
         "continent":  "Oceania",
         "lat":  -33.8698,
         "lng":  151.2083,
-        "visitDate":  "2",
+        "visitDate":  "2005-05",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -2437,7 +2437,7 @@
         "continent":  "North America",
         "lat":  27.945,
         "lng":  -82.4583,
-        "visitDate":  "2",
+        "visitDate":  "2022-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -2462,7 +2462,7 @@
         "continent":  "North America",
         "lat":  27.945,
         "lng":  -82.4583,
-        "visitDate":  "2",
+        "visitDate":  "2022-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -2487,7 +2487,7 @@
         "continent":  "North America",
         "lat":  32.5317,
         "lng":  -117.0195,
-        "visitDate":  "1",
+        "visitDate":  "1995-07",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -2562,7 +2562,7 @@
         "continent":  "North America",
         "lat":  43.6535,
         "lng":  -79.3839,
-        "visitDate":  "2",
+        "visitDate":  "2005-08",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -2587,7 +2587,7 @@
         "continent":  "North America",
         "lat":  43.6535,
         "lng":  -79.3839,
-        "visitDate":  "2",
+        "visitDate":  "2005-08",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -2612,7 +2612,7 @@
         "continent":  "Europe",
         "lat":  69.6516,
         "lng":  18.9559,
-        "visitDate":  "2",
+        "visitDate":  "2025-01",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -2637,7 +2637,7 @@
         "continent":  "Europe",
         "lat":  48.2084,
         "lng":  16.3725,
-        "visitDate":  "2",
+        "visitDate":  "2024-10",
         "status":  "visited",
         "isClosed":  true,
         "pins":  [
@@ -2664,7 +2664,7 @@
         "continent":  "Europe",
         "lat":  52.2334,
         "lng":  21.0711,
-        "visitDate":  "2",
+        "visitDate":  "2021-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
@@ -2689,7 +2689,7 @@
         "continent":  "Europe",
         "lat":  51.1263,
         "lng":  16.9782,
-        "visitDate":  "2",
+        "visitDate":  "2021-08",
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
