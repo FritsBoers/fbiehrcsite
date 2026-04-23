@@ -116,7 +116,7 @@
               <th data-sort="city">City <span class="sort-arrow"></span></th>
               <th data-sort="country">Country <span class="sort-arrow"></span></th>
               <th data-sort="continent">Continent <span class="sort-arrow"></span></th>
-              <th data-sort="date">Visit Date <span class="sort-arrow"></span></th>
+              <th data-sort="date">First Visit <span class="sort-arrow"></span></th>
               <th data-sort="pins">Pins <span class="sort-arrow"></span></th>
               <th data-sort="tshirts">T-Shirts <span class="sort-arrow"></span></th>
               <th data-sort="status">Status <span class="sort-arrow"></span></th>
@@ -236,7 +236,7 @@
           const pinsCount = loc.pins ? loc.pins.length : 0;
           const tshirtsCount = loc.tshirts ? loc.tshirts.length : 0;
           const statusLabel = loc.isClosed ? '<span class="badge badge-closed">Closed</span>' : 'Open';
-          const dateStr = App.formatShortDate(App.latestVisitDate(loc));
+          const dateStr = App.formatShortDate(App.firstVisitDate(loc));
           return `<tr class="table-row" onclick="window.location='location.html?id=${encodeURIComponent(loc.id)}'">
             <td class="td-name">${App.escapeHtml(loc.name)}</td>
             <td>${App.typeBadge(loc.type)}</td>

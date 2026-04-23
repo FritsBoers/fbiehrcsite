@@ -94,6 +94,15 @@ const App = {
     return loc.visitDate;
   },
 
+  // Get the first (earliest) visit date (supports string or array)
+  firstVisitDate(loc) {
+    if (!loc.visitDate) return null;
+    if (Array.isArray(loc.visitDate)) {
+      return loc.visitDate.length > 0 ? loc.visitDate[0] : null;
+    }
+    return loc.visitDate;
+  },
+
   // Get visit count
   visitCount(loc) {
     if (!loc.visitDate) return 0;
