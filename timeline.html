@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')</script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,6 +28,7 @@
         <a href="trips.html">Planned Visits</a>
         <a href="about.html">About</a>
       </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
       <button class="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -144,10 +147,9 @@
 
         years[year].forEach((entry, i) => {
           const loc = entry.loc;
-          const thumb = App.getThumb(loc);
-          const imgHtml = thumb
-            ? `<img src="${thumb}" alt="${App.escapeHtml(loc.name)}" class="timeline-thumb" onerror="this.style.display='none'">`
-            : '';
+          const thumbPath = `images/locations/${loc.id}/thumbnail/1.jpg`;
+          const photoFallback = `images/locations/${loc.id}/photos/1.jpg`;
+          const imgHtml = `<img src="${thumbPath}" data-fallback="${photoFallback}" alt="${App.escapeHtml(loc.name)}" class="timeline-thumb" onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;delete this.dataset.fallback}else{this.style.display='none'}">`;
           const side = i % 2 === 0 ? 'left' : 'right';
           const closedBadge = loc.isClosed ? ' <span class="badge badge-closed">Closed</span>' : '';
           const visits = App.visitCount(loc);
@@ -183,7 +185,6 @@
           }
         });
       }, { threshold: 0.1 });
-
       document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     });
   </script>

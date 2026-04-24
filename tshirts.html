@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')</script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,6 +27,7 @@
         <a href="trips.html">Planned Visits</a>
         <a href="about.html">About</a>
       </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
       <button class="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -78,7 +81,11 @@
       <div class="results-count" id="tshirt-count"></div>
 
       <div class="tshirt-board" id="tshirt-grid">
-        <!-- Populated by JS -->
+        <!-- Skeleton placeholders -->
+        <div class="skeleton-card"><div class="skeleton-img" style="aspect-ratio:1/1"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-img" style="aspect-ratio:1/1"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-img" style="aspect-ratio:1/1"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-img" style="aspect-ratio:1/1"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
       </div>
     </div>
   </div>
@@ -173,6 +180,7 @@
               </div>
             `).join('');
           }
+          App.observeCards(grid, '.tshirt-card');
           return;
         }
 
@@ -224,6 +232,7 @@
               </div>
             </div>
           `).join('');
+          App.observeCards(grid, '.tshirt-card');
           return;
         }
 
@@ -243,6 +252,7 @@
             </div>
           `).join('');
         }
+        App.observeCards(grid, '.tshirt-card');
       }
 
       // Events

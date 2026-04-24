@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Guitar pick shape -->
+  <path d="M32 2C24 2 14 8 9 18c-5 10-6 22-1 30 3 5 9 10 16 12.5 2 .7 4.5 1.2 8 1.5 3.5-.3 6-.8 8-1.5 7-2.5 13-7.5 16-12.5 5-8 4-20-1-30C50 8 40 2 32 2z" fill="#c8102e"/>
+  <!-- Inner highlight -->
+  <path d="M32 6C25 6 17 11 13 19c-4 8-5 18-1 25 2.5 4 7.5 8 13.5 10.5 2 .6 3.8 1 6.5 1.2 2.7-.2 4.5-.6 6.5-1.2 6-2.5 11-6.5 13.5-10.5 4-7 3-17-1-25C47 11 39 6 32 6z" fill="none" stroke="#a00d24" stroke-width="1"/>
+  <!-- HRC text -->
+  <text x="32" y="38" text-anchor="middle" font-family="Arial Black,Impact,sans-serif" font-weight="900" font-size="18" fill="#d4a843" letter-spacing="1">HRC</text>
+  <!-- Guitar string accent -->
+  <line x1="32" y1="8" x2="32" y2="22" stroke="#d4a843" stroke-width="1.5" opacity="0.5"/>
+</svg>

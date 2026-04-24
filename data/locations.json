@@ -18,8 +18,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/amsterdam-americanhotel-hotel-nl/photos/1.jpg",
-                       "images/locations/amsterdam-americanhotel-hotel-nl/photos/2.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -74,7 +73,7 @@
                         "images/locations/angkor-cafe-kh/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/angkor-cafe-kh/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -100,7 +99,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/antwerp-cafe-be/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -129,8 +128,7 @@
                         "images/locations/athens-cafe-gr/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/athens-cafe-gr/photos/1.jpg",
-                       "images/locations/athens-cafe-gr/photos/2.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -188,8 +186,7 @@
                        "images/locations/bali-cafe-id/photos/1.jpg",
                        "images/locations/bali-cafe-id/photos/2.jpg",
                        "images/locations/bali-cafe-id/photos/3.jpg",
-                       "images/locations/bali-cafe-id/photos/4.jpg",
-                       "images/locations/bali-cafe-id/photos/5.jpg"
+                       "images/locations/bali-cafe-id/photos/4.jpg"
                    ],
         "notes":  "Test text",
         "favorite":  false,
@@ -270,8 +267,7 @@
                         "images/locations/barcelona-cafe-es/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/barcelona-cafe-es/photos/1.jpg",
-                       "images/locations/barcelona-cafe-es/photos/2.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -324,7 +320,7 @@
                         "images/locations/beijing-cafe-cn/tshirts/3.jpg"
                     ],
         "photos":  [
-                       "images/locations/beijing-cafe-cn/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -350,7 +346,7 @@
                         "images/locations/berlin-cafe-de/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/berlin-cafe-de/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -375,7 +371,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/berlin-checkpointcharlie-rockshop-de/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -430,8 +426,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/bucharest-cafe-ro/photos/1.jpg",
-                       "images/locations/bucharest-cafe-ro/photos/2.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -457,10 +452,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/budapest-cafe-hu/photos/1.jpg",
-                       "images/locations/budapest-cafe-hu/photos/2.jpg",
-                       "images/locations/budapest-cafe-hu/photos/3.jpg",
-                       "images/locations/budapest-cafe-hu/photos/4.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -485,7 +477,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/budapest-hotel-hu/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -510,8 +502,7 @@
                         "images/locations/buenos-aires-cafe-ar/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/buenos-aires-cafe-ar/photos/1.jpg",
-                       "images/locations/buenos-aires-cafe-ar/photos/2.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -536,7 +527,7 @@
                         "images/locations/cancun-cafe-mx/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/cancun-cafe-mx/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -561,7 +552,7 @@
                         "images/locations/cape-town-cafe-za/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/cape-town-cafe-za/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -586,7 +577,7 @@
                         "images/locations/chicago-cafe-us/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/chicago-cafe-us/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -611,7 +602,7 @@
                         "images/locations/chicago-hotel-us/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/chicago-hotel-us/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -662,7 +653,7 @@
                         "images/locations/copenhagen-cafe-dk/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/copenhagen-cafe-dk/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -687,7 +678,7 @@
                         "images/locations/cozumel-cafe-mx/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/cozumel-cafe-mx/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -748,7 +739,7 @@
                         "images/locations/edinburgh-cafe-gb/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/edinburgh-cafe-gb/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -773,7 +764,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/gdansk-cafe-pl/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -798,7 +789,7 @@
                         "images/locations/glasgow-cafe-gb/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/glasgow-cafe-gb/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -824,7 +815,7 @@
                         "images/locations/gran-canaria-cafe-es/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/gran-canaria-cafe-es/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -849,7 +840,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/hamburg-cafe-de/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -874,8 +865,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/ho-chi-minh-city-cafe-vn/photos/1.jpg",
-                       "images/locations/ho-chi-minh-city-cafe-vn/photos/2.jpg"
+                       "images/locations/ho-chi-minh-city-cafe-vn/photos/1.jpg"
                    ],
         "notes":  "Test text",
         "favorite":  false,
@@ -900,8 +890,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/hollywood-cafe-us/photos/1.jpg",
-                       "images/locations/hollywood-cafe-us/photos/2.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -926,7 +915,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/hollywood-hotel-us/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1001,7 +990,7 @@
                         "images/locations/ibiza-cafe-es/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/ibiza-cafe-es/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1051,7 +1040,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/innsbruck-cafe-at/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1105,9 +1094,7 @@
                         "images/locations/key-west-cafe-us/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/key-west-cafe-us/photos/1.jpg",
-                       "images/locations/key-west-cafe-us/photos/2.jpg",
-                       "images/locations/key-west-cafe-us/photos/3.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1132,7 +1119,7 @@
                         "images/locations/koh-samui-cafe-th/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/koh-samui-cafe-th/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1157,7 +1144,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/krakow-cafe-pl/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1182,7 +1169,7 @@
                         "images/locations/kuala-lumpur-cafe-my/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/kuala-lumpur-cafe-my/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1258,7 +1245,7 @@
                         "images/locations/lima-cafe-pe/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/lima-cafe-pe/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1313,7 +1300,7 @@
                         "images/locations/london-cafe-gb/tshirts/2.jpg"
                     ],
         "photos":  [
-                       "images/locations/london-cafe-gb/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1338,7 +1325,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/london-hotel-gb/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1363,7 +1350,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/london-oxfordstreet-cafe-gb/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1388,7 +1375,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/london-piccadillycircus-cafe-gb/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1413,7 +1400,7 @@
                         "images/locations/los-angeles-cafe-us/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/los-angeles-cafe-us/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1438,7 +1425,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/lyon-cafe-fr/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1464,7 +1451,7 @@
                         "images/locations/madrid-cafe-es/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/madrid-cafe-es/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1490,7 +1477,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/malaga-cafe-es/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1515,8 +1502,7 @@
                         "images/locations/mallorca-cafe-es/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/mallorca-cafe-es/photos/1.jpg",
-                       "images/locations/mallorca-cafe-es/photos/2.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1541,7 +1527,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/malta-airport-cafe-mt/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1566,7 +1552,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/malta-cafe-mt/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1594,9 +1580,7 @@
                         "images/locations/manchester-cafe-gb/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/manchester-cafe-gb/photos/1.jpg",
-                       "images/locations/manchester-cafe-gb/photos/2.jpg",
-                       "images/locations/manchester-cafe-gb/photos/3.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1621,7 +1605,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/marbella-hotel-es/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1646,7 +1630,7 @@
                         "images/locations/melaka-cafe-my/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/melaka-cafe-my/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1699,9 +1683,7 @@
                         "images/locations/miami-cafe-us/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/miami-cafe-us/photos/1.jpg",
-                       "images/locations/miami-cafe-us/photos/2.jpg",
-                       "images/locations/miami-cafe-us/photos/3.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1726,7 +1708,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/milan-cafe-it/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1751,8 +1733,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/munich-cafe-de/photos/1.jpg",
-                       "images/locations/munich-cafe-de/photos/2.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1780,9 +1761,7 @@
                         "images/locations/new-york-cafe-us/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/new-york-cafe-us/photos/1.jpg",
-                       "images/locations/new-york-cafe-us/photos/2.jpg",
-                       "images/locations/new-york-cafe-us/photos/3.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1807,7 +1786,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/new-york-hotel-us/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1859,7 +1838,7 @@
                         "images/locations/niagara-falls-us-cafe-us/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/niagara-falls-us-cafe-us/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1884,8 +1863,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/nice-cafe-fr/photos/1.jpg",
-                       "images/locations/nice-cafe-fr/photos/2.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1913,9 +1891,7 @@
                         "images/locations/orlando-cafe-us/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/orlando-cafe-us/photos/1.jpg",
-                       "images/locations/orlando-cafe-us/photos/2.jpg",
-                       "images/locations/orlando-cafe-us/photos/3.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1940,7 +1916,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/orlando-universal-hotel-us/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1990,7 +1966,7 @@
                         "images/locations/oslo-cafe-no/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/oslo-cafe-no/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2017,7 +1993,7 @@
                         "images/locations/paris-cafe-fr/tshirts/2.jpg"
                     ],
         "photos":  [
-                       "images/locations/paris-cafe-fr/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2042,8 +2018,7 @@
                         "images/locations/penang-cafe-my/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/penang-cafe-my/photos/1.jpg",
-                       "images/locations/penang-cafe-my/photos/2.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2068,7 +2043,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/penang-hotel-my/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2119,7 +2094,7 @@
                         "images/locations/prague-cafe-cz/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/prague-cafe-cz/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2144,7 +2119,7 @@
                         "images/locations/reykjavik-cafe-is/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/reykjavik-cafe-is/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2169,7 +2144,7 @@
                         "images/locations/rome-cafe-it/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/rome-cafe-it/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2195,7 +2170,7 @@
                         "images/locations/salt-lake-city-cafe-us/tshirts/2.jpg"
                     ],
         "photos":  [
-                       "images/locations/salt-lake-city-cafe-us/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2320,7 +2295,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/shenzhen-cafe-cn/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2345,7 +2320,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/shenzhen-hotel-cn/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2421,7 +2396,7 @@
                         "images/locations/st-thomas-cafe-vi/tshirts/2.jpg"
                     ],
         "photos":  [
-                       "images/locations/st-thomas-cafe-vi/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2447,7 +2422,7 @@
                         "images/locations/sydney-cafe-au/tshirts/2.jpg"
                     ],
         "photos":  [
-                       "images/locations/sydney-cafe-au/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2472,7 +2447,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/tampa-cafe-us/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2597,7 +2572,7 @@
                         "images/locations/toronto-cafe-ca/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/toronto-cafe-ca/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2647,7 +2622,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/tromso-cafe-no/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2674,10 +2649,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/vienna-cafe-at/photos/1.jpg",
-                       "images/locations/vienna-cafe-at/photos/2.jpg",
-                       "images/locations/vienna-cafe-at/photos/3.jpg",
-                       "images/locations/vienna-cafe-at/photos/4.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2702,7 +2674,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/warsaw-cafe-pl/photos/1.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2727,8 +2699,7 @@
 
                     ],
         "photos":  [
-                       "images/locations/wroclaw-cafe-pl/photos/1.jpg",
-                       "images/locations/wroclaw-cafe-pl/photos/2.jpg"
+
                    ],
         "notes":  "",
         "favorite":  false,

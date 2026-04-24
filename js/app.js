@@ -200,13 +200,14 @@ const App = {
   // ---------- Thumbnail ----------
   getThumb(loc) {
     if (loc.thumbnail) return loc.thumbnail;
-    if (loc.photos && loc.photos.length > 0) return loc.photos[0];
-    return null;
+    return `images/locations/${loc.id}/thumbnail/1.jpg`;
   },
 
   // ---------- Location Card HTML ----------
   locationCard(loc) {
-    const imgSrc = this.getThumb(loc) || this.placeholderImg(loc.city);
+    const thumbPath = this.getThumb(loc);
+    const photoFallback = `images/locations/${loc.id}/photos/1.jpg`;
+    const placeholder = this.placeholderImg(loc.city);
     const dateStr = loc.status === 'planned'
       ? `Planned: ${this.formatShortDate(loc.plannedDate)}`
       : this.formatShortDate(this.latestVisitDate(loc));
@@ -216,8 +217,8 @@ const App = {
 
     return `
       <a href="location.html?id=${encodeURIComponent(loc.id)}" class="location-card">
-        <img class="location-card-image" src="${imgSrc}" alt="${this.escapeHtml(loc.name)}"
-             onerror="this.src='${this.placeholderImg(loc.city)}'">
+        <img class="location-card-image" src="${thumbPath}" data-fallback="${photoFallback}" alt="${this.escapeHtml(loc.name)}"
+             onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;delete this.dataset.fallback}else{this.onerror=null;this.src='${placeholder}'}">
         <div class="location-card-body">
           <div class="location-card-name">${this.escapeHtml(loc.name)}${visitBadge}${closedBadge}</div>
           <div class="location-card-city">${this.escapeHtml(loc.city)}, ${this.escapeHtml(loc.country)}</div>
@@ -327,10 +328,38 @@ const App = {
     });
   },
 
+  // ---------- Theme Toggle ----------
+  initTheme() {
+    const toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    toggle.textContent = isDark ? '☀️' : '🌙';
+    toggle.addEventListener('click', () => {
+      const dark = document.documentElement.getAttribute('data-theme') !== 'dark';
+      document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      toggle.textContent = dark ? '☀️' : '🌙';
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+    });
+  },
+
+  // ---------- Scroll Animations for Dynamic Cards ----------
+  observeCards(container, selector = '.location-card') {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    container.querySelectorAll(selector).forEach(el => observer.observe(el));
+  },
+
   // ---------- Init ----------
   init() {
     this.initNav();
     this.initLightbox();
+    this.initTheme();
   }
 };
 

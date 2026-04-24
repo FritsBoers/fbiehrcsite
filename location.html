@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')</script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,6 +27,7 @@
         <a href="trips.html">Planned Visits</a>
         <a href="about.html">About</a>
       </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
       <button class="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -106,18 +109,15 @@
       // Page title
       document.title = `${loc.name} — My Hard Rock Collection`;
 
-      // Hero image
+      // Hero image — fallback chain: banner folder -> photos/1.jpg -> placeholder
       const heroImg = document.getElementById('hero-img');
-      const bannerPath = `images/locations/${loc.id}/banner/banner.jpg`;
-      const bannerSrc = loc.banner || bannerPath;
+      const bannerSrc = loc.banner || `images/locations/${loc.id}/banner/banner.jpg`;
+      const photoFallback = `images/locations/${loc.id}/photos/1.jpg`;
+      const placeholder = App.placeholderImg(loc.city, 1200, 400);
       heroImg.src = bannerSrc;
       heroImg.onerror = () => {
-        if (loc.photos && loc.photos.length > 0) {
-          heroImg.src = loc.photos[0];
-          heroImg.onerror = () => { heroImg.src = App.placeholderImg(loc.city, 1200, 400); };
-        } else {
-          heroImg.src = App.placeholderImg(loc.city, 1200, 400);
-        }
+        heroImg.src = photoFallback;
+        heroImg.onerror = () => { heroImg.onerror = null; heroImg.src = placeholder; };
       };
       document.getElementById('detail-title').textContent = loc.name;
 
@@ -145,12 +145,35 @@
       }
 
       // Photo gallery
-      if (loc.photos && loc.photos.length > 0) {
+      // Photo gallery — use JSON photos array, or probe convention paths photos/1.jpg, 2.jpg, etc.
+      const jsonPhotos = loc.photos && loc.photos.length > 0 ? loc.photos : [];
+      if (jsonPhotos.length > 0) {
         document.getElementById('photos-section').style.display = 'block';
-        document.getElementById('photo-gallery').innerHTML = loc.photos.map(photo => `
+        document.getElementById('photo-gallery').innerHTML = jsonPhotos.map(photo => `
           <img src="${photo}" alt="Photo of ${App.escapeHtml(loc.name)}" data-lightbox
                onerror="this.style.display='none'">
         `).join('');
+      } else {
+        // No photos in JSON — probe convention paths 1.jpg, 2.jpg, ... until one fails
+        const basePath = `images/locations/${loc.id}/photos/`;
+        const gallery = document.getElementById('photo-gallery');
+        const section = document.getElementById('photos-section');
+        let i = 1;
+        function probeNext() {
+          const img = new Image();
+          img.onload = () => {
+            section.style.display = 'block';
+            const el = document.createElement('img');
+            el.src = img.src;
+            el.alt = `Photo of ${App.escapeHtml(loc.name)}`;
+            el.setAttribute('data-lightbox', '');
+            gallery.appendChild(el);
+            i++;
+            probeNext();
+          };
+          img.src = basePath + i + '.jpg';
+        }
+        probeNext();
       }
 
       // Collectibles (pins + t-shirts)

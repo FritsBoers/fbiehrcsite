@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')</script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,6 +28,7 @@
         <a href="trips.html">Planned Visits</a>
         <a href="about.html">About</a>
       </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
       <button class="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -56,7 +59,9 @@
     <div class="container">
       <h2 class="section-title">Latest Additions</h2>
       <div class="latest-grid" id="latest-additions">
-        <!-- Populated by JS -->
+        <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
       </div>
       <div class="text-center" style="margin-top: 40px;">
         <a href="locations.html" class="btn btn-outline">View All Locations</a>
@@ -157,6 +162,7 @@
       const latestEl = document.getElementById('latest-additions');
       const latest = App.getLatestVisits(data, 3);
       latestEl.innerHTML = latest.map(loc => App.locationCard(loc)).join('');
+      App.observeCards(latestEl);
 
       // --- Upcoming Visits ---
       const planned = App.getPlanned(data).sort((a, b) => new Date(a.plannedDate) - new Date(b.plannedDate));
