@@ -43,10 +43,10 @@
       </div>
 
       <!-- Next Trip Highlight -->
-      <div id="next-trip-highlight" style="margin-bottom: 50px;"></div>
+      <div id="next-trip-highlight" class="fade-in" style="margin-bottom: 50px;"></div>
 
       <!-- Trip Cards -->
-      <div class="trips-grid" id="trips-grid">
+      <div class="trips-grid fade-in" id="trips-grid">
         <!-- Populated by JS -->
       </div>
 
@@ -108,7 +108,7 @@
       // Trip cards
       const grid = document.getElementById('trips-grid');
       grid.innerHTML = planned.map(loc => `
-        <div class="trip-card">
+        <div class="trip-card fade-in">
           <h3>${App.escapeHtml(loc.name)}</h3>
           <div class="trip-location">${App.escapeHtml(loc.city)}, ${App.escapeHtml(loc.country)} · ${App.escapeHtml(loc.continent)}</div>
           <div class="trip-date">📅 Planned for ${App.formatDate(loc.plannedDate)}</div>
@@ -117,6 +117,17 @@
           <div class="trip-countdown-label">to go</div>
         </div>
       `).join('');
+
+      // Scroll-triggered fade-in animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     });
   </script>
 
