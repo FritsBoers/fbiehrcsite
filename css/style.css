@@ -72,6 +72,23 @@
   background: #1e1e1e !important;
 }
 
+[data-theme="dark"] .location-card {
+  background: #252525;
+  border-color: #444;
+}
+
+[data-theme="dark"] .badge-cafe,
+[data-theme="dark"] .badge-rockshop,
+[data-theme="dark"] .badge-closed,
+[data-theme="dark"] .badge-visits,
+[data-theme="dark"] .badge-revisit {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .badge-hotel {
+  color: #1a1a1a;
+}
+
 /* Dark mode toggle button */
 .theme-toggle {
   background: none;
