@@ -1035,7 +1035,7 @@
                         "images/locations/hong-kong-thepeak-cafe-hk/tshirts/1.jpg"
                     ],
         "photos":  [
-
+                       "images/locations/hong-kong-thepeak-cafe-hk/photos/1.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1144,7 +1144,7 @@
                         "images/locations/jakarta-cafe-id/tshirts/1.jpg"
                     ],
         "photos":  [
-
+                       "images/locations/jakarta-cafe-id/photos/1.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1202,7 +1202,10 @@
                         "images/locations/koh-samui-cafe-th/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/koh-samui-cafe-th/photos/1.jpg"
+                       "images/locations/koh-samui-cafe-th/photos/1.jpg",
+                       "images/locations/koh-samui-cafe-th/photos/2.jpg",
+                       "images/locations/koh-samui-cafe-th/photos/3.jpg",
+                       "images/locations/koh-samui-cafe-th/photos/4.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2683,7 +2686,7 @@
                         "images/locations/tijuana-cafe-mx/tshirts/1.jpg"
                     ],
         "photos":  [
-
+                       "images/locations/tijuana-cafe-mx/photos/1.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
