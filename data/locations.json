@@ -872,7 +872,10 @@
                         "images/locations/gran-canaria-cafe-es/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/gran-canaria-cafe-es/photos/1.jpg"
+                       "images/locations/gran-canaria-cafe-es/photos/1.jpg",
+                       "images/locations/gran-canaria-cafe-es/photos/2.jpg",
+                       "images/locations/gran-canaria-cafe-es/photos/3.jpg",
+                       "images/locations/gran-canaria-cafe-es/photos/4.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2118,7 +2121,9 @@
                         "images/locations/oslo-cafe-no/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/oslo-cafe-no/photos/1.jpg"
+                       "images/locations/oslo-cafe-no/photos/1.jpg",
+                       "images/locations/oslo-cafe-no/photos/2.jpg",
+                       "images/locations/oslo-cafe-no/photos/3.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2171,7 +2176,12 @@
                     ],
         "photos":  [
                        "images/locations/penang-cafe-my/photos/1.jpg",
-                       "images/locations/penang-cafe-my/photos/2.jpg"
+                       "images/locations/penang-cafe-my/photos/2.jpg",
+                       "images/locations/penang-cafe-my/photos/3.jpg",
+                       "images/locations/penang-cafe-my/photos/4.jpg",
+                       "images/locations/penang-cafe-my/photos/5.jpg",
+                       "images/locations/penang-cafe-my/photos/6.jpg",
+                       "images/locations/penang-cafe-my/photos/7.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2221,7 +2231,8 @@
                         "images/locations/porto-cafe-pt/tshirts/1.jpg"
                     ],
         "photos":  [
-
+                       "images/locations/porto-cafe-pt/photos/1.jpg",
+                       "images/locations/porto-cafe-pt/photos/2.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2247,7 +2258,8 @@
                         "images/locations/prague-cafe-cz/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/prague-cafe-cz/photos/1.jpg"
+                       "images/locations/prague-cafe-cz/photos/1.jpg",
+                       "images/locations/prague-cafe-cz/photos/2.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2272,7 +2284,10 @@
                         "images/locations/reykjavik-cafe-is/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/reykjavik-cafe-is/photos/1.jpg"
+                       "images/locations/reykjavik-cafe-is/photos/1.jpg",
+                       "images/locations/reykjavik-cafe-is/photos/2.jpg",
+                       "images/locations/reykjavik-cafe-is/photos/3.jpg",
+                       "images/locations/reykjavik-cafe-is/photos/4.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2399,7 +2414,7 @@
                         "images/locations/san-juan-cafe-pr/tshirts/1.jpg"
                     ],
         "photos":  [
-
+                       "images/locations/san-juan-cafe-pr/photos/1.JPG"
                    ],
         "notes":  "Test text",
         "favorite":  false,
@@ -2424,7 +2439,8 @@
                         "images/locations/seattle-cafe-us/tshirts/1.jpg"
                     ],
         "photos":  [
-
+                       "images/locations/seattle-cafe-us/photos/1.JPG",
+                       "images/locations/seattle-cafe-us/photos/2.JPG"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2449,7 +2465,12 @@
                         "images/locations/shenzhen-cafe-cn/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/shenzhen-cafe-cn/photos/1.jpg"
+                       "images/locations/shenzhen-cafe-cn/photos/1.jpg",
+                       "images/locations/shenzhen-cafe-cn/photos/2.jpg",
+                       "images/locations/shenzhen-cafe-cn/photos/3.jpg",
+                       "images/locations/shenzhen-cafe-cn/photos/4.jpg",
+                       "images/locations/shenzhen-cafe-cn/photos/5.jpg",
+                       "images/locations/shenzhen-cafe-cn/photos/6.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2474,7 +2495,8 @@
 
                     ],
         "photos":  [
-                       "images/locations/shenzhen-hotel-cn/photos/1.jpg"
+                       "images/locations/shenzhen-hotel-cn/photos/1.jpg",
+                       "images/locations/shenzhen-hotel-cn/photos/2.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2553,7 +2575,11 @@
                         "images/locations/st-thomas-cafe-vi/tshirts/2.jpg"
                     ],
         "photos":  [
-                       "images/locations/st-thomas-cafe-vi/photos/1.jpg"
+                       "images/locations/st-thomas-cafe-vi/photos/1.jpg",
+                       "images/locations/st-thomas-cafe-vi/photos/2.jpg",
+                       "images/locations/st-thomas-cafe-vi/photos/3.jpg",
+                       "images/locations/st-thomas-cafe-vi/photos/4.jpg",
+                       "images/locations/st-thomas-cafe-vi/photos/5.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2732,7 +2758,8 @@
                         "images/locations/toronto-cafe-ca/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/toronto-cafe-ca/photos/1.jpg"
+                       "images/locations/toronto-cafe-ca/photos/1.jpg",
+                       "images/locations/toronto-cafe-ca/photos/2.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2757,7 +2784,7 @@
                         "images/locations/toronto-skydome-cafe-ca/tshirts/1.jpg"
                     ],
         "photos":  [
-
+                       "images/locations/toronto-skydome-cafe-ca/photos/1.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2782,7 +2809,15 @@
                         "images/locations/tromso-cafe-no/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/tromso-cafe-no/photos/1.jpg"
+                       "images/locations/tromso-cafe-no/photos/1.jpg",
+                       "images/locations/tromso-cafe-no/photos/2.jpg",
+                       "images/locations/tromso-cafe-no/photos/3.jpg",
+                       "images/locations/tromso-cafe-no/photos/4.jpg",
+                       "images/locations/tromso-cafe-no/photos/5.jpg",
+                       "images/locations/tromso-cafe-no/photos/6.jpg",
+                       "images/locations/tromso-cafe-no/photos/7.jpg",
+                       "images/locations/tromso-cafe-no/photos/8.jpg",
+                       "images/locations/tromso-cafe-no/photos/9.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
