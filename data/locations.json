@@ -458,7 +458,17 @@
                     ],
         "photos":  [
                        "images/locations/bucharest-cafe-ro/photos/1.jpg",
-                       "images/locations/bucharest-cafe-ro/photos/2.jpg"
+                       "images/locations/bucharest-cafe-ro/photos/2.jpg",
+                       "images/locations/bucharest-cafe-ro/photos/3.jpg",
+                       "images/locations/bucharest-cafe-ro/photos/4.jpg",
+                       "images/locations/bucharest-cafe-ro/photos/5.jpg",
+                       "images/locations/bucharest-cafe-ro/photos/6.jpg",
+                       "images/locations/bucharest-cafe-ro/photos/7.jpg",
+                       "images/locations/bucharest-cafe-ro/photos/8.jpg",
+                       "images/locations/bucharest-cafe-ro/photos/9.jpg",
+                       "images/locations/bucharest-cafe-ro/photos/10.jpg",
+                       "images/locations/bucharest-cafe-ro/photos/11.jpg",
+                       "images/locations/bucharest-cafe-ro/photos/12.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -510,7 +520,8 @@
 
                     ],
         "photos":  [
-                       "images/locations/budapest-hotel-hu/photos/1.jpg"
+                       "images/locations/budapest-hotel-hu/photos/1.jpg",
+                       "images/locations/budapest-hotel-hu/photos/2.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -662,7 +673,7 @@
                         "images/locations/cologne-cafe-de/tshirts/1.jpg"
                     ],
         "photos":  [
-
+                       "images/locations/cologne-cafe-de/photos/1.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -744,7 +755,11 @@
                     ],
         "photos":  [
                        "images/locations/dubai-cafe-ae/photos/1.jpg",
-                       "images/locations/dubai-cafe-ae/photos/2.jpg"
+                       "images/locations/dubai-cafe-ae/photos/2.jpg",
+                       "images/locations/dubai-cafe-ae/photos/3.jpg",
+                       "images/locations/dubai-cafe-ae/photos/4.jpg",
+                       "images/locations/dubai-cafe-ae/photos/5.jpg",
+                       "images/locations/dubai-cafe-ae/photos/6.jpg"
                    ],
         "notes":  "Test text",
         "favorite":  false,
@@ -773,7 +788,8 @@
                         "images/locations/edinburgh-cafe-gb/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/edinburgh-cafe-gb/photos/1.jpg"
+                       "images/locations/edinburgh-cafe-gb/photos/1.jpg",
+                       "images/locations/edinburgh-cafe-gb/photos/2.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -798,7 +814,10 @@
                         "images/locations/gdansk-cafe-pl/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/gdansk-cafe-pl/photos/1.jpg"
+                       "images/locations/gdansk-cafe-pl/photos/1.jpg",
+                       "images/locations/gdansk-cafe-pl/photos/2.jpg",
+                       "images/locations/gdansk-cafe-pl/photos/3.jpg",
+                       "images/locations/gdansk-cafe-pl/photos/4.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -823,7 +842,11 @@
                         "images/locations/glasgow-cafe-gb/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/glasgow-cafe-gb/photos/1.jpg"
+                       "images/locations/glasgow-cafe-gb/photos/1.jpg",
+                       "images/locations/glasgow-cafe-gb/photos/2.jpg",
+                       "images/locations/glasgow-cafe-gb/photos/3.jpg",
+                       "images/locations/glasgow-cafe-gb/photos/4.jpg",
+                       "images/locations/glasgow-cafe-gb/photos/5.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -874,7 +897,8 @@
                         "images/locations/hamburg-cafe-de/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/hamburg-cafe-de/photos/1.jpg"
+                       "images/locations/hamburg-cafe-de/photos/1.jpg",
+                       "images/locations/hamburg-cafe-de/photos/2.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -900,7 +924,9 @@
                     ],
         "photos":  [
                        "images/locations/ho-chi-minh-city-cafe-vn/photos/1.jpg",
-                       "images/locations/ho-chi-minh-city-cafe-vn/photos/2.jpg"
+                       "images/locations/ho-chi-minh-city-cafe-vn/photos/2.jpg",
+                       "images/locations/ho-chi-minh-city-cafe-vn/photos/3.jpg",
+                       "images/locations/ho-chi-minh-city-cafe-vn/photos/4.jpg"
                    ],
         "notes":  "Test text",
         "favorite":  false,
@@ -1031,7 +1057,8 @@
                         "images/locations/ibiza-cafe-es/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/ibiza-cafe-es/photos/1.jpg"
+                       "images/locations/ibiza-cafe-es/photos/1.jpg",
+                       "images/locations/ibiza-cafe-es/photos/2.JPG"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1056,7 +1083,7 @@
                         "images/locations/ibiza-hotel-es/tshirts/1.jpg"
                     ],
         "photos":  [
-
+                       "images/locations/ibiza-hotel-es/photos/1.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1081,7 +1108,15 @@
                         "images/locations/innsbruck-cafe-at/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/innsbruck-cafe-at/photos/1.jpg"
+                       "images/locations/innsbruck-cafe-at/photos/1.jpg",
+                       "images/locations/innsbruck-cafe-at/photos/2.jpg",
+                       "images/locations/innsbruck-cafe-at/photos/3.jpg",
+                       "images/locations/innsbruck-cafe-at/photos/4.jpg",
+                       "images/locations/innsbruck-cafe-at/photos/5.jpg",
+                       "images/locations/innsbruck-cafe-at/photos/6.jpg",
+                       "images/locations/innsbruck-cafe-at/photos/7.jpg",
+                       "images/locations/innsbruck-cafe-at/photos/8.jpg",
+                       "images/locations/innsbruck-cafe-at/photos/9.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1189,7 +1224,8 @@
                         "images/locations/krakow-cafe-pl/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/krakow-cafe-pl/photos/1.jpg"
+                       "images/locations/krakow-cafe-pl/photos/1.jpg",
+                       "images/locations/krakow-cafe-pl/photos/2.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1214,7 +1250,10 @@
                         "images/locations/kuala-lumpur-cafe-my/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/kuala-lumpur-cafe-my/photos/1.jpg"
+                       "images/locations/kuala-lumpur-cafe-my/photos/1.jpg",
+                       "images/locations/kuala-lumpur-cafe-my/photos/2.jpg",
+                       "images/locations/kuala-lumpur-cafe-my/photos/3.jpg",
+                       "images/locations/kuala-lumpur-cafe-my/photos/4.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1315,7 +1354,9 @@
                         "images/locations/lisbon-cafe-pt/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/lisbon-cafe-pt/photos/1.jpg"
+                       "images/locations/lisbon-cafe-pt/photos/1.jpg",
+                       "images/locations/lisbon-cafe-pt/photos/2.jpg",
+                       "images/locations/lisbon-cafe-pt/photos/3.jpg"
                    ],
         "notes":  "Test text",
         "favorite":  false,
@@ -1344,7 +1385,8 @@
                         "images/locations/london-cafe-gb/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/london-cafe-gb/photos/1.jpg"
+                       "images/locations/london-cafe-gb/photos/1.jpg",
+                       "images/locations/london-cafe-gb/photos/2.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1369,7 +1411,9 @@
 
                     ],
         "photos":  [
-                       "images/locations/london-hotel-gb/photos/1.jpg"
+                       "images/locations/london-hotel-gb/photos/1.jpg",
+                       "images/locations/london-hotel-gb/photos/2.jpg",
+                       "images/locations/london-hotel-gb/photos/3.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1419,7 +1463,9 @@
                         "images/locations/london-piccadillycircus-cafe-gb/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/london-piccadillycircus-cafe-gb/photos/1.jpg"
+                       "images/locations/london-piccadillycircus-cafe-gb/photos/1.jpg",
+                       "images/locations/london-piccadillycircus-cafe-gb/photos/2.jpg",
+                       "images/locations/london-piccadillycircus-cafe-gb/photos/3.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1469,7 +1515,9 @@
                         "images/locations/lyon-cafe-fr/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/lyon-cafe-fr/photos/1.jpg"
+                       "images/locations/lyon-cafe-fr/photos/1.jpg",
+                       "images/locations/lyon-cafe-fr/photos/2.jpg",
+                       "images/locations/lyon-cafe-fr/photos/3.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1495,7 +1543,11 @@
                         "images/locations/madrid-cafe-es/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/madrid-cafe-es/photos/1.jpg"
+                       "images/locations/madrid-cafe-es/photos/1.jpg",
+                       "images/locations/madrid-cafe-es/photos/2.jpg",
+                       "images/locations/madrid-cafe-es/photos/3.jpg",
+                       "images/locations/madrid-cafe-es/photos/4.jpg",
+                       "images/locations/madrid-cafe-es/photos/5.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1521,7 +1573,15 @@
                         "images/locations/malaga-cafe-es/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/malaga-cafe-es/photos/1.jpg"
+                       "images/locations/malaga-cafe-es/photos/1.jpg",
+                       "images/locations/malaga-cafe-es/photos/2.jpg",
+                       "images/locations/malaga-cafe-es/photos/3.jpg",
+                       "images/locations/malaga-cafe-es/photos/4.jpg",
+                       "images/locations/malaga-cafe-es/photos/5.jpg",
+                       "images/locations/malaga-cafe-es/photos/6.jpg",
+                       "images/locations/malaga-cafe-es/photos/7.jpg",
+                       "images/locations/malaga-cafe-es/photos/8.jpg",
+                       "images/locations/malaga-cafe-es/photos/9.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1547,7 +1607,10 @@
                     ],
         "photos":  [
                        "images/locations/mallorca-cafe-es/photos/1.jpg",
-                       "images/locations/mallorca-cafe-es/photos/2.jpg"
+                       "images/locations/mallorca-cafe-es/photos/2.jpg",
+                       "images/locations/mallorca-cafe-es/photos/3.jpg",
+                       "images/locations/mallorca-cafe-es/photos/4.jpg",
+                       "images/locations/mallorca-cafe-es/photos/5.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1597,7 +1660,11 @@
                         "images/locations/malta-cafe-mt/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/malta-cafe-mt/photos/1.jpg"
+                       "images/locations/malta-cafe-mt/photos/1.jpg",
+                       "images/locations/malta-cafe-mt/photos/2.jpg",
+                       "images/locations/malta-cafe-mt/photos/3.jpg",
+                       "images/locations/malta-cafe-mt/photos/4.jpg",
+                       "images/locations/malta-cafe-mt/photos/5.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1652,7 +1719,10 @@
 
                     ],
         "photos":  [
-                       "images/locations/marbella-hotel-es/photos/1.jpg"
+                       "images/locations/marbella-hotel-es/photos/1.jpg",
+                       "images/locations/marbella-hotel-es/photos/2.jpg",
+                       "images/locations/marbella-hotel-es/photos/3.jpg",
+                       "images/locations/marbella-hotel-es/photos/4.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1677,7 +1747,9 @@
                         "images/locations/melaka-cafe-my/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/melaka-cafe-my/photos/1.jpg"
+                       "images/locations/melaka-cafe-my/photos/1.jpg",
+                       "images/locations/melaka-cafe-my/photos/2.jpg",
+                       "images/locations/melaka-cafe-my/photos/3.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1702,7 +1774,7 @@
                         "images/locations/melbourne-cafe-au/tshirts/1.jpg"
                     ],
         "photos":  [
-
+                       "images/locations/melbourne-cafe-au/photos/1.JPG"
                    ],
         "notes":  "Test text",
         "favorite":  false,
@@ -1792,7 +1864,14 @@
                     ],
         "photos":  [
                        "images/locations/munich-cafe-de/photos/1.jpg",
-                       "images/locations/munich-cafe-de/photos/2.jpg"
+                       "images/locations/munich-cafe-de/photos/2.jpg",
+                       "images/locations/munich-cafe-de/photos/3.jpg",
+                       "images/locations/munich-cafe-de/photos/4.jpg",
+                       "images/locations/munich-cafe-de/photos/5.jpg",
+                       "images/locations/munich-cafe-de/photos/6.jpg",
+                       "images/locations/munich-cafe-de/photos/7.jpg",
+                       "images/locations/munich-cafe-de/photos/8.jpg",
+                       "images/locations/munich-cafe-de/photos/9.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1926,7 +2005,8 @@
                     ],
         "photos":  [
                        "images/locations/nice-cafe-fr/photos/1.jpg",
-                       "images/locations/nice-cafe-fr/photos/2.jpg"
+                       "images/locations/nice-cafe-fr/photos/2.jpg",
+                       "images/locations/nice-cafe-fr/photos/3.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1959,8 +2039,7 @@
                        "images/locations/orlando-cafe-us/photos/3.jpg",
                        "images/locations/orlando-cafe-us/photos/4.jpg",
                        "images/locations/orlando-cafe-us/photos/5.jpg",
-                       "images/locations/orlando-cafe-us/photos/6.jpg",
-                       "images/locations/orlando-cafe-us/photos/7.jpg"
+                       "images/locations/orlando-cafe-us/photos/6.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -2294,7 +2373,8 @@
                         "images/locations/san-jose-cafe-cr/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/san-jose-cafe-cr/photos/1.jpg"
+                       "images/locations/san-jose-cafe-cr/photos/1.jpg",
+                       "images/locations/san-jose-cafe-cr/photos/2.jpg"
                    ],
         "notes":  "Test text",
         "favorite":  false,
@@ -2786,7 +2866,8 @@
                     ],
         "photos":  [
                        "images/locations/wroclaw-cafe-pl/photos/1.jpg",
-                       "images/locations/wroclaw-cafe-pl/photos/2.jpg"
+                       "images/locations/wroclaw-cafe-pl/photos/2.jpg",
+                       "images/locations/wroclaw-cafe-pl/photos/3.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
