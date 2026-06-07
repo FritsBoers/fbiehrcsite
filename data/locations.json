@@ -251,7 +251,7 @@
                         "images/locations/bangkok-cafe-th/tshirts/2.jpg"
                     ],
         "photos":  [
-                       "images/locations/bangkok-cafe-th/photos/1.JPG"
+                       "images/locations/bangkok-cafe-th/photos/1.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1061,7 +1061,7 @@
                     ],
         "photos":  [
                        "images/locations/ibiza-cafe-es/photos/1.jpg",
-                       "images/locations/ibiza-cafe-es/photos/2.JPG"
+                       "images/locations/ibiza-cafe-es/photos/2.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
@@ -1780,7 +1780,7 @@
                         "images/locations/melbourne-cafe-au/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/melbourne-cafe-au/photos/1.JPG"
+                       "images/locations/melbourne-cafe-au/photos/1.jpg"
                    ],
         "notes":  "Test text",
         "favorite":  false,
@@ -2418,7 +2418,7 @@
                         "images/locations/san-juan-cafe-pr/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/san-juan-cafe-pr/photos/1.JPG"
+                       "images/locations/san-juan-cafe-pr/photos/1.jpg"
                    ],
         "notes":  "Test text",
         "favorite":  false,
@@ -2443,8 +2443,8 @@
                         "images/locations/seattle-cafe-us/tshirts/1.jpg"
                     ],
         "photos":  [
-                       "images/locations/seattle-cafe-us/photos/1.JPG",
-                       "images/locations/seattle-cafe-us/photos/2.JPG"
+                       "images/locations/seattle-cafe-us/photos/1.jpg",
+                       "images/locations/seattle-cafe-us/photos/2.jpg"
                    ],
         "notes":  "",
         "favorite":  false,
