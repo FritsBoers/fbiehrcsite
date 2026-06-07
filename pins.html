@@ -114,7 +114,7 @@
       const withPins = App.getVisited(data).filter(loc => loc.pins && loc.pins.length > 0);
 
       // Not-visited pins (from otherpins/notivisited folder)
-      const notVisitedPins = Array.from({length: 16}, (_, i) => i + 1)
+      const notVisitedPins = Array.from({length: 17}, (_, i) => i + 1)
         .filter(n => n !== 3)
         .map(n => ({ pinImg: `images/otherpins/notivisited/${n}.jpg`, label: `Not Visited Pin ${n}` }));
 

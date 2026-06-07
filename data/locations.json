@@ -2309,7 +2309,8 @@
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
-                     "images/locations/rome-cafe-it/pins/1.jpg"
+                     "images/locations/rome-cafe-it/pins/1.jpg",
+                     "images/locations/rome-cafe-it/pins/2.jpg"
                  ],
         "tshirts":  [
                         "images/locations/rome-cafe-it/tshirts/1.jpg"
@@ -2806,7 +2807,7 @@
         "status":  "visited",
         "isClosed":  false,
         "pins":  [
-
+                     "images/locations/tromso-cafe-no/pins/1.jpg"
                  ],
         "tshirts":  [
                         "images/locations/tromso-cafe-no/tshirts/1.jpg"
