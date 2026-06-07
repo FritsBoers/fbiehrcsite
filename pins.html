@@ -265,6 +265,11 @@
         renderPins();
       });
 
+      // Read URL params to support deep links (e.g. pins.html?collection=notvisited)
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('collection')) collectionSelect.value = urlParams.get('collection');
+      if (urlParams.get('search')) document.getElementById('pin-search').value = urlParams.get('search');
+
       renderPins();
     });
   </script>
