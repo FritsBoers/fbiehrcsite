@@ -114,9 +114,12 @@
       const withPins = App.getVisited(data).filter(loc => loc.pins && loc.pins.length > 0);
 
       // Not-visited pins (from otherpins/notivisited folder)
-      const notVisitedPins = Array.from({length: 17}, (_, i) => i + 1)
-        .filter(n => n !== 3)
-        .map(n => ({ pinImg: `images/otherpins/notivisited/${n}.jpg`, label: `Not Visited Pin ${n}` }));
+      const notVisitedPins = [
+        'Arthens Piraeus Port', 'Aruba', 'Cancun Hotel', 'Cartanega',
+        'Dubai Airport', 'Dublin', 'Florence', 'Kathmandu',
+        'Kuala Lumpur Airport', 'Maldives', 'Sevilla', 'Stockholm',
+        'Tenerife', 'Valencia', 'Valencia (2)', 'Venice'
+      ].map(name => ({ pinImg: `images/otherpins/notivisited/${name}.jpg`, label: name }));
 
       // Other pins (from otherpins/other folder)
       const otherPins = Array.from({length: 5}, (_, i) => i + 1)
