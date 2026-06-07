@@ -211,15 +211,18 @@
       try {
         const res = await fetch('data/updates.json');
         const updates = await res.json();
-        updatesEl.innerHTML = updates.slice(0, 5).map(u => `
+        updatesEl.innerHTML = updates.slice(0, 5).map(u => {
+          const link = u.linkUrl ? ` <a href="${App.escapeHtml(u.linkUrl)}" class="update-link">${App.escapeHtml(u.linkLabel || 'View')}</a>` : '';
+          return `
           <div class="update-item">
             <div class="update-icon">${u.icon}</div>
             <div class="update-content">
               <div class="update-date">${App.formatDate(u.date)}</div>
-              <div class="update-text">${App.escapeHtml(u.text)}</div>
+              <div class="update-text">${App.escapeHtml(u.text)}${link}</div>
             </div>
           </div>
-        `).join('');
+        `;
+        }).join('');
       } catch (e) {
         updatesEl.innerHTML = '<p style="color: var(--gray);">No updates yet.</p>';
       }

@@ -12,7 +12,9 @@
   {
     "date": "2026-05-20",
     "icon": "📌",
-    "text": "My nephew went on a city trip to Rome and brought me a pin from Hard Rock Cafe Rome. Thanks!"
+    "text": "My nephew went on a city trip to Rome and brought me a pin from Hard Rock Cafe Rome. Thanks!",
+    "linkUrl": "location.html?id=rome-cafe-it",
+    "linkLabel": "View Rome"
   },
   {
     "date": "2026-05-08",
