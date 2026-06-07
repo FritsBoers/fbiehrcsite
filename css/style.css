@@ -615,6 +615,15 @@ ul { list-style: none; }
   text-decoration: underline;
 }
 
+.pin-highlight {
+  animation: pin-glow 1.5s ease-in-out 2;
+}
+
+@keyframes pin-glow {
+  0%, 100% { box-shadow: none; }
+  50% { box-shadow: 0 0 16px 4px var(--gold); }
+}
+
 /* ---------- Latest Additions ---------- */
 .latest-grid {
   display: grid;

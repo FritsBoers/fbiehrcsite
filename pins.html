@@ -169,7 +169,7 @@
           const label = collection === 'notvisited' ? 'not visited locations' : 'other';
           countEl.textContent = `${pins.length} pin${pins.length !== 1 ? 's' : ''} (${label})`;
           board.innerHTML = pins.map(p => `
-            <div class="pin-item">
+            <div class="pin-item" data-pin-label="${App.escapeHtml(p.label)}">
               <img src="${p.pinImg}" alt="${App.escapeHtml(p.label)}" data-lightbox
                    onerror="this.src='${App.placeholderImg('Pin', 140, 140)}'">
               <div class="pin-info">
@@ -265,12 +265,23 @@
         renderPins();
       });
 
-      // Read URL params to support deep links (e.g. pins.html?collection=notvisited)
+      // Read URL params to support deep links (e.g. pins.html?collection=notvisited&highlight=Maldives)
       const urlParams = new URLSearchParams(window.location.search);
       if (urlParams.get('collection')) collectionSelect.value = urlParams.get('collection');
       if (urlParams.get('search')) document.getElementById('pin-search').value = urlParams.get('search');
 
       renderPins();
+
+      // Highlight and scroll to a specific pin if requested
+      const highlight = urlParams.get('highlight');
+      if (highlight) {
+        const pin = document.querySelector(`.pin-item[data-pin-label="${CSS.escape(highlight)}"]`);
+        if (pin) {
+          pin.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          pin.classList.add('pin-highlight');
+          setTimeout(() => pin.classList.remove('pin-highlight'), 3000);
+        }
+      }
     });
   </script>
 
