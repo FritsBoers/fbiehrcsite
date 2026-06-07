@@ -55,6 +55,14 @@
     </div>
   </section>
 
+  <!-- News & Updates -->
+  <section class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">News & Updates</h2>
+      <div class="updates-feed" id="updates-feed"></div>
+    </div>
+  </section>
+
   <!-- Latest Additions -->
   <section class="section fade-in" style="background: var(--dark-gray);">
     <div class="container">
@@ -198,6 +206,24 @@
           </div>
         `).join('');
       }
+      // --- News & Updates ---
+      const updatesEl = document.getElementById('updates-feed');
+      try {
+        const res = await fetch('data/updates.json');
+        const updates = await res.json();
+        updatesEl.innerHTML = updates.slice(0, 5).map(u => `
+          <div class="update-item">
+            <div class="update-icon">${u.icon}</div>
+            <div class="update-content">
+              <div class="update-date">${App.formatDate(u.date)}</div>
+              <div class="update-text">${App.escapeHtml(u.text)}</div>
+            </div>
+          </div>
+        `).join('');
+      } catch (e) {
+        updatesEl.innerHTML = '<p style="color: var(--gray);">No updates yet.</p>';
+      }
+
       // --- Scroll animations ---
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

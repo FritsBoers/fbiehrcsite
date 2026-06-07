@@ -560,6 +560,49 @@ ul { list-style: none; }
   font-size: 0.9rem;
 }
 
+/* ---------- Updates Feed ---------- */
+.updates-feed {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.update-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--mid-gray);
+}
+
+.update-item:last-child {
+  border-bottom: none;
+}
+
+.update-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  width: 36px;
+  text-align: center;
+}
+
+.update-content {
+  flex: 1;
+}
+
+.update-date {
+  font-size: 0.8rem;
+  color: var(--gray);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.update-text {
+  font-size: 1rem;
+  color: var(--black);
+  line-height: 1.5;
+}
+
 /* ---------- Latest Additions ---------- */
 .latest-grid {
   display: grid;
