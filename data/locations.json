@@ -1274,15 +1274,15 @@
         "continent":  "Asia",
         "lat":  35.0116,
         "lng":  135.7681,
-        "visitDate":  null,
-        "plannedDate":  "2026-07",
-        "status":  "planned",
+        "visitDate":  "2026-08",
+        "plannedDate":  null,
+        "status":  "visited",
         "isClosed":  false,
         "pins":  [
-
+                     "images/locations/kyoto-cafe-jp/pins/1.jpg"
                  ],
         "tshirts":  [
-
+                        "images/locations/kyoto-cafe-jp/tshirts/1.jpg"
                     ],
         "photos":  [
 
@@ -2089,15 +2089,41 @@
         "continent":  "Asia",
         "lat":  34.6938,
         "lng":  135.5015,
-        "visitDate":  null,
-        "plannedDate":  "2026-07",
-        "status":  "planned",
+        "visitDate":  "2026-08",
+        "plannedDate":  null,
+        "status":  "visited",
         "isClosed":  false,
         "pins":  [
-
+                     "images/locations/osaka-namba-rockshop-jp/pins/1.jpg",
+                     "images/locations/osaka-namba-rockshop-jp/pins/2.jpg"
                  ],
         "tshirts":  [
 
+                    ],
+        "photos":  [
+
+                   ],
+        "notes":  "",
+        "favorite":  false
+    },
+    {
+        "id":  "osaka-universal-citywalk-cafe-jp",
+        "name":  "Hard Rock Cafe Universal CityWalk Osaka",
+        "type":  "cafe",
+        "city":  "Osaka",
+        "country":  "Japan",
+        "continent":  "Asia",
+        "lat":  34.6654,
+        "lng":  135.4323,
+        "visitDate":  "2026-08",
+        "plannedDate":  null,
+        "status":  "visited",
+        "isClosed":  false,
+        "pins":  [
+                     "images/locations/osaka-universal-citywalk-cafe-jp/pins/1.jpg"
+                 ],
+        "tshirts":  [
+                        "images/locations/osaka-universal-citywalk-cafe-jp/tshirts/1.jpg"
                     ],
         "photos":  [
 
@@ -2702,15 +2728,15 @@
         "continent":  "Asia",
         "lat":  35.6769,
         "lng":  139.7639,
-        "visitDate":  null,
-        "plannedDate":  "2026-07",
-        "status":  "planned",
+        "visitDate":  "2026-08",
+        "plannedDate":  null,
+        "status":  "visited",
         "isClosed":  false,
         "pins":  [
-
+                     "images/locations/tokyo-roppongi-cafe-jp/pins/1.jpg"
                  ],
         "tshirts":  [
-
+                        "images/locations/tokyo-roppongi-cafe-jp/tshirts/1.jpg"
                     ],
         "photos":  [
 
@@ -2727,15 +2753,15 @@
         "continent":  "Asia",
         "lat":  35.6769,
         "lng":  139.7639,
-        "visitDate":  null,
-        "plannedDate":  "2026-07",
-        "status":  "planned",
+        "visitDate":  "2026-08",
+        "plannedDate":  null,
+        "status":  "visited",
         "isClosed":  false,
         "pins":  [
-
+                     "images/locations/tokyo-uyeno-eki-cafe-jp/pins/1.jpg"
                  ],
         "tshirts":  [
-
+                        "images/locations/tokyo-uyeno-eki-cafe-jp/tshirts/1.jpg"
                     ],
         "photos":  [
 
@@ -2911,30 +2937,5 @@
         "notes":  "",
         "favorite":  false,
         "plannedDate":  null
-    },
-    {
-        "id":  "yokohama-cafe-jp",
-        "name":  "Hard Rock Cafe Yokohama",
-        "type":  "cafe",
-        "city":  "Yokohama",
-        "country":  "Japan",
-        "continent":  "Asia",
-        "lat":  35.4503,
-        "lng":  139.6344,
-        "visitDate":  null,
-        "plannedDate":  "2026-07",
-        "status":  "planned",
-        "isClosed":  false,
-        "pins":  [
-
-                 ],
-        "tshirts":  [
-
-                    ],
-        "photos":  [
-
-                   ],
-        "notes":  "",
-        "favorite":  false
     }
 ]
