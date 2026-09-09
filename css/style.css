@@ -615,6 +615,17 @@ ul { list-style: none; }
   text-decoration: underline;
 }
 
+.update-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin-top: 8px;
+}
+
+.update-links .update-link {
+  margin-left: 0;
+}
+
 .pin-highlight {
   animation: pin-glow 1.5s ease-in-out 2;
 }

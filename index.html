@@ -213,12 +213,16 @@
         const updates = await res.json();
         updatesEl.innerHTML = updates.slice(0, 5).map(u => {
           const link = u.linkUrl ? ` <a href="${App.escapeHtml(u.linkUrl)}" class="update-link">${App.escapeHtml(u.linkLabel || 'View')}</a>` : '';
+          const linkList = u.links && u.links.length
+            ? `<div class="update-links">${u.links.map(l => `<a href="${App.escapeHtml(l.url)}" class="update-link">${App.escapeHtml(l.label)}</a>`).join('')}</div>`
+            : '';
           return `
           <div class="update-item">
             <div class="update-icon">${u.icon}</div>
             <div class="update-content">
               <div class="update-date">${App.formatDate(u.date)}</div>
               <div class="update-text">${App.escapeHtml(u.text)}${link}</div>
+              ${linkList}
             </div>
           </div>
         `;
