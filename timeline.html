@@ -149,7 +149,7 @@
           const loc = entry.loc;
           const thumbPath = `images/locations/${loc.id}/thumbnail/1.jpg`;
           const photoFallback = `images/locations/${loc.id}/photos/1.jpg`;
-          const imgHtml = `<img src="${thumbPath}" data-fallback="${photoFallback}" alt="${App.escapeHtml(loc.name)}" class="timeline-thumb" onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;delete this.dataset.fallback}else{this.style.display='none'}">`;
+          const imgHtml = `<img src="${thumbPath}" data-fallback="${photoFallback}" alt="${App.escapeHtml(loc.name)}" class="timeline-thumb" loading="lazy" decoding="async" onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;delete this.dataset.fallback}else{this.style.display='none'}">`;
           const side = i % 2 === 0 ? 'left' : 'right';
           const closedBadge = loc.isClosed ? ' <span class="badge badge-closed">Closed</span>' : '';
           const visits = App.visitCount(loc);

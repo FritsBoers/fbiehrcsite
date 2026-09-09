@@ -139,7 +139,7 @@
 
           const thumbSrc = App.getThumb(loc);
           const photoThumb = thumbSrc
-            ? `<img src="${thumbSrc}" alt="${App.escapeHtml(loc.name)}" onerror="this.style.display='none'">`
+            ? `<img src="${thumbSrc}" alt="${App.escapeHtml(loc.name)}" loading="lazy" decoding="async" onerror="this.style.display='none'">`
             : '';
 
           const popupContent = `

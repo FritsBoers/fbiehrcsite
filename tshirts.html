@@ -178,6 +178,7 @@
             grid.innerHTML = nvFiltered.map(t => `
               <div class="tshirt-card">
                 <img src="${t.img}" alt="${App.escapeHtml(t.label)}" data-lightbox
+                     loading="lazy" decoding="async"
                      onerror="this.src='${App.placeholderImg('T-Shirt', 280, 300)}'">
                 <div class="pin-info">
                   <h4>${App.escapeHtml(t.label)}</h4>
@@ -222,6 +223,7 @@
           grid.innerHTML = allTshirts.map(({ loc, tImg, index }) => `
             <div class="tshirt-card">
               <img src="${tImg}" alt="${App.escapeHtml(loc.city)} T-Shirt ${index + 1}" data-lightbox
+                   loading="lazy" decoding="async"
                    onerror="this.src='${App.placeholderImg(loc.city + ' T-Shirt', 280, 300)}'">
               <div class="pin-info">
                 <h4>${App.escapeHtml(loc.name)}${loc.tshirts.length > 1 ? ' (#' + (index + 1) + ')' : ''}</h4>
@@ -231,6 +233,7 @@
           `).join('') + nvFiltered.map(t => `
             <div class="tshirt-card">
               <img src="${t.img}" alt="${App.escapeHtml(t.label)}" data-lightbox
+                   loading="lazy" decoding="async"
                    onerror="this.src='${App.placeholderImg('T-Shirt', 280, 300)}'">
               <div class="pin-info">
                 <h4>${App.escapeHtml(t.label)}</h4>
@@ -249,6 +252,7 @@
           grid.innerHTML = allTshirts.map(({ loc, tImg, index }) => `
             <div class="tshirt-card">
               <img src="${tImg}" alt="${App.escapeHtml(loc.city)} T-Shirt ${index + 1}" data-lightbox
+                   loading="lazy" decoding="async"
                    onerror="this.src='${App.placeholderImg(loc.city + ' T-Shirt', 280, 300)}'">
               <div class="pin-info">
                 <h4>${App.escapeHtml(loc.name)}${loc.tshirts.length > 1 ? ' (#' + (index + 1) + ')' : ''}</h4>

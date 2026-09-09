@@ -152,6 +152,7 @@
         document.getElementById('photos-section').style.display = 'block';
         document.getElementById('photo-gallery').innerHTML = jsonPhotos.map(photo => `
           <img src="${photo}" alt="Photo of ${App.escapeHtml(loc.name)}" data-lightbox
+               loading="lazy" decoding="async"
                onerror="this.style.display='none'">
         `).join('');
       } else {
@@ -167,6 +168,8 @@
             const el = document.createElement('img');
             el.src = img.src;
             el.alt = `Photo of ${App.escapeHtml(loc.name)}`;
+            el.loading = 'lazy';
+            el.decoding = 'async';
             el.setAttribute('data-lightbox', '');
             gallery.appendChild(el);
             i++;
@@ -186,6 +189,7 @@
             <div class="photo-gallery" style="margin: 0;">
               ${loc.pins.map((p, i) => `
                 <img src="${p}" alt="${App.escapeHtml(loc.name)} Pin ${i + 1}" data-lightbox
+                     loading="lazy" decoding="async"
                      onerror="this.src='${App.placeholderImg('Pin photo coming soon', 300, 300)}'"
                      style="height: 200px; object-fit: contain;">
               `).join('')}
@@ -200,6 +204,7 @@
             <div class="photo-gallery" style="margin: 0;">
               ${loc.tshirts.map((t, i) => `
                 <img src="${t}" alt="${App.escapeHtml(loc.name)} T-Shirt ${i + 1}" data-lightbox
+                     loading="lazy" decoding="async"
                      onerror="this.src='${App.placeholderImg('T-shirt photo coming soon', 300, 300)}'"
                      style="height: 200px; object-fit: contain;">
               `).join('')}

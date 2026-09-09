@@ -171,6 +171,7 @@
           board.innerHTML = pins.map(p => `
             <div class="pin-item" data-pin-label="${App.escapeHtml(p.label)}">
               <img src="${p.pinImg}" alt="${App.escapeHtml(p.label)}" data-lightbox
+                   loading="lazy" decoding="async"
                    onerror="this.src='${App.placeholderImg('Pin', 140, 140)}'">
               <div class="pin-info">
                 <h4>${App.escapeHtml(p.label)}</h4>
@@ -212,6 +213,7 @@
           board.innerHTML = allPins.map(({ loc, pinImg, index }) => `
             <div class="pin-item">
               <img src="${pinImg}" alt="${App.escapeHtml(loc.city)} Pin ${index + 1}" data-lightbox
+                   loading="lazy" decoding="async"
                    onerror="this.src='${App.placeholderImg(loc.city, 140, 140)}'">
               <div class="pin-info">
                 <h4>${App.escapeHtml(loc.name)}${loc.pins.length > 1 ? ' (#' + (index + 1) + ')' : ''}</h4>
@@ -221,6 +223,7 @@
           `).join('') + extraPins.map(p => `
             <div class="pin-item">
               <img src="${p.pinImg}" alt="${App.escapeHtml(p.label)}" data-lightbox
+                   loading="lazy" decoding="async"
                    onerror="this.src='${App.placeholderImg('Pin', 140, 140)}'">
               <div class="pin-info">
                 <h4>${App.escapeHtml(p.label)}</h4>
@@ -239,6 +242,7 @@
           board.innerHTML = allPins.map(({ loc, pinImg, index }) => `
             <div class="pin-item">
               <img src="${pinImg}" alt="${App.escapeHtml(loc.city)} Pin ${index + 1}" data-lightbox
+                   loading="lazy" decoding="async"
                    onerror="this.src='${App.placeholderImg(loc.city, 140, 140)}'">
               <div class="pin-info">
                 <h4>${App.escapeHtml(loc.name)}${loc.pins.length > 1 ? ' (#' + (index + 1) + ')' : ''}</h4>

@@ -218,6 +218,7 @@ const App = {
     return `
       <a href="location.html?id=${encodeURIComponent(loc.id)}" class="location-card">
         <img class="location-card-image" src="${thumbPath}" data-fallback="${photoFallback}" alt="${this.escapeHtml(loc.name)}"
+             loading="lazy" decoding="async"
              onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;delete this.dataset.fallback}else{this.onerror=null;this.src='${placeholder}'}">
         <div class="location-card-body">
           <div class="location-card-name">${this.escapeHtml(loc.name)}${visitBadge}${closedBadge}</div>
