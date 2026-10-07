@@ -1,4 +1,11 @@
 [
+   {
+    "date": "2026-10-07",
+    "icon": "📌",
+    "text": "My niece went on a trip to Malta and brought me a pin from the recently opened Hard Rock Hotel Malta! So kind of her.",
+    "linkUrl": "pins.html?collection=notvisited&highlight=Malta%20Hotel",
+    "linkLabel": "View pin"
+  },
   {
     "date": "2026-08-10",
     "icon": "🎸",
@@ -10,13 +17,6 @@
       { "url": "location.html?id=osaka-universal-citywalk-cafe-jp", "label": "Osaka Universal CityWalk" },
       { "url": "location.html?id=kyoto-cafe-jp", "label": "Kyoto" }
     ]
-  },
-    {
-    "date": "2026-10-07",
-    "icon": "📌",
-    "text": "My niece went on a trip to Malta and brought me a pin from the recently opened Hard Rock Hotel Malta! So kind of her.",
-    "linkUrl": "pins.html?collection=notvisited&highlight=Malta%20Hotel",
-    "linkLabel": "View pin"
   },
   {
     "date": "2026-06-04",
