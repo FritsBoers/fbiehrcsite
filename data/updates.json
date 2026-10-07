@@ -31,12 +31,5 @@
     "text": "My nephew went on a city trip to Rome and brought me a pin from Hard Rock Cafe Rome. Thanks!",
     "linkUrl": "location.html?id=rome-cafe-it",
     "linkLabel": "View Rome"
-  },
-  {
-    "date": "2026-05-08",
-    "icon": "📌",
-    "text": "I noticed my pin from Tromsø was missing, so I’ve just added it.",
-    "linkUrl": "location.html?id=tromso-cafe-no",
-    "linkLabel": "View Tromsø"
   }
 ]
