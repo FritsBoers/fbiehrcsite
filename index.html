@@ -146,6 +146,7 @@
     document.addEventListener('DOMContentLoaded', async () => {
       const data = await App.loadData();
       const visited = App.getVisited(data);
+      const otherPinsData = await App.loadOtherPins();
 
       // --- Counters ---
       const countersEl = document.getElementById('hero-counters');
@@ -155,7 +156,7 @@
         { target: App.getHotels(visited).length, label: 'Hotels' },
         { target: App.getRockShops(visited).length, label: 'Rock Shops' },
         { target: App.getVisitedCountries(data).length, label: 'Countries' },
-        { target: App.getPinsCount(data) + 21, label: 'Pins' },
+        { target: App.getPinsCount(data) + App.getOtherPinsCount(otherPinsData), label: 'Pins' },
         { target: App.getTshirtsCount(data), label: 'T-Shirts' },
         { target: App.getPlanned(data).length, label: 'Visits Planned' }
       ];

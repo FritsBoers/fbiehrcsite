@@ -6,6 +6,8 @@
 const App = {
   _data: null,
   _dataPromise: null,
+  _otherPinsData: null,
+  _otherPinsPromise: null,
 
   // ---------- Data Loading ----------
   async loadData() {
@@ -23,6 +25,28 @@ const App = {
       });
 
     return this._dataPromise;
+  },
+
+  // Pins collected without a cafe visit (not tracked in locations.json)
+  async loadOtherPins() {
+    if (this._otherPinsData) return this._otherPinsData;
+    if (this._otherPinsPromise) return this._otherPinsPromise;
+
+    this._otherPinsPromise = fetch('data/other-pins.json')
+      .then(res => {
+        if (!res.ok) throw new Error('Failed to load other pins data');
+        return res.json();
+      })
+      .then(data => {
+        this._otherPinsData = data;
+        return data;
+      });
+
+    return this._otherPinsPromise;
+  },
+
+  getOtherPinsCount(otherPinsData) {
+    return otherPinsData.notVisited.length + otherPinsData.otherCount;
   },
 
   // ---------- Data Helpers ----------

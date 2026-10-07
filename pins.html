@@ -111,18 +111,15 @@
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
       const data = await App.loadData();
+      const otherPinsData = await App.loadOtherPins();
       const withPins = App.getVisited(data).filter(loc => loc.pins && loc.pins.length > 0);
 
       // Not-visited pins (from otherpins/notivisited folder)
-      const notVisitedPins = [
-        'Arthens Piraeus Port', 'Aruba', 'Cancun Hotel', 'Cartanega',
-        'Dubai Airport', 'Dublin', 'Florence', 'Kathmandu',
-        'Kuala Lumpur Airport', 'Maldives', 'Malta Hotel', 'Sevilla', 'Stockholm',
-        'Tenerife', 'Valencia', 'Valencia (2)', 'Venice'
-      ].map(name => ({ pinImg: `images/otherpins/notivisited/${name}.jpg`, label: name }));
+      const notVisitedPins = otherPinsData.notVisited
+        .map(name => ({ pinImg: `images/otherpins/notivisited/${name}.jpg`, label: name }));
 
       // Other pins (from otherpins/other folder)
-      const otherPins = Array.from({length: 5}, (_, i) => i + 1)
+      const otherPins = Array.from({length: otherPinsData.otherCount}, (_, i) => i + 1)
         .map(n => ({ pinImg: `images/otherpins/other/${n}.jpg`, label: `Other Pin ${n}` }));
 
       // Populate filters
