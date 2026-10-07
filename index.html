@@ -146,7 +146,12 @@
     document.addEventListener('DOMContentLoaded', async () => {
       const data = await App.loadData();
       const visited = App.getVisited(data);
-      const otherPinsData = await App.loadOtherPins();
+      let otherPinsData = { notVisited: [], otherCount: 0 };
+      try {
+        otherPinsData = await App.loadOtherPins();
+      } catch (e) {
+        // Pin counter falls back to 0 extra pins if this fails; rest of the page still renders
+      }
 
       // --- Counters ---
       const countersEl = document.getElementById('hero-counters');
